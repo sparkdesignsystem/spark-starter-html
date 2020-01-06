@@ -5,14 +5,6 @@ This repository includes the Spark Design System assets, all required dependenci
 
 ## Setup
 
-If you don't want to have your own fork, you can do pull down all of the code with a single line:
-
-```
-git clone -b kitchen-sink https://github.com/sparkdesignsystem/spark-starter-html.git
-```
-
-If you want to fork this repo so you can save your commits to your own fork, follow these steps.
-
 1. Fork this repo.
 1. `clone` your forked repo with `git clone <yourRepoUrl>`.
 1. [Install Node](https://nodejs.org/en/).
