@@ -11,7 +11,8 @@ This repository includes all of the prequisites for a Spark HTML installation, *
 ## Quick Start
 
 1. Go through **Setup**.
-1. Run `npm run start` in your project directory.
+1. Run `npm run build` in your project directory.
+1. Open `dist/index.html` in your web browser.
 
 ## Next Steps
 
