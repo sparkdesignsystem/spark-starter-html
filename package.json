@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
+    "build": "gulp loadFonts && webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Spark",
@@ -13,6 +13,7 @@
     "@sparkdesignsystem/spark": "^12.2.0",
     "css-loader": "^3.4.0",
     "file-loader": "^5.0.2",
+    "gulp": "^4.0.2",
     "handlebars": "^4.5.3",
     "handlebars-helpers": "^0.10.0",
     "handlebars-loader": "^1.7.1",

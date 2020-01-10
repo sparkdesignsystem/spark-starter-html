@@ -1,1 +1,3 @@
 node_modules
+dist
+src/templates/spark-core-icons.hbs
