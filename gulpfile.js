@@ -2,7 +2,7 @@ const gulp = require("gulp");
 const fs = require('fs');
 const request = require('request');
 
-function loadFonts(cb) {
+function loadIcons(cb) {
   const fileStream = fs.createWriteStream(
     "./src/templates/spark-core-icons.hbs"
   );
@@ -15,4 +15,4 @@ function loadFonts(cb) {
     .on("finish", cb);
 }
 
-exports.loadFonts = loadFonts;
+exports.loadIcons = loadIcons;
