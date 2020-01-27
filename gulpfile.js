@@ -4,7 +4,7 @@ const request = require('request');
 
 function loadIcons(cb) {
   const fileStream = fs.createWriteStream(
-    "./src/templates/spark-core-icons.hbs"
+    "./src/spark-core-icons.hbs"
   );
   request
     .get({
