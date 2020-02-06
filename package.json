@@ -10,7 +10,7 @@
   "author": "Spark",
   "license": "ISC",
   "devDependencies": {
-    "@sparkdesignsystem/spark": "^12.2.0",
+    "@sparkdesignsystem/spark": "^12.3.0",
     "css-loader": "^3.4.0",
     "gulp": "^4.0.2",
     "handlebars": "^4.7.0",
