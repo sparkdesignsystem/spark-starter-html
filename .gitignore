@@ -1,4 +1,4 @@
 node_modules
 dist
-src/spark-core-icons.hbs
+src/spark-icons.hbs
 .DS_Store
