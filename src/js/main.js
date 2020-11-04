@@ -5,3 +5,5 @@ import '@sparkdesignsystem/spark/es5/sparkPolyfills';
 // initialize Spark
 sparkPrerender();
 spark();
+
+console.log('Spark Loaded!');

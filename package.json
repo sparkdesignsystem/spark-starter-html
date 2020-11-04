@@ -1,7 +1,7 @@
 {
   "name": "spark-starter-html",
   "version": "2.0.0",
-  "description": "A starter repo for an html website, using Spark",
+  "description": "This is a boilerplate repository for developing with Spark HTML components.",
   "main": "index.js",
   "scripts": {
     "build": "gulp"
@@ -9,13 +9,20 @@
   "author": "Spark Dev Team <sparkdesignsystem@quickenloans.com>",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
     "@sparkdesignsystem/spark": "^14.0.0",
+    "babelify": "^10.0.0",
+    "browserify": "^17.0.0",
     "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
     "gulp-hb": "^8.0.0",
     "gulp-sass": "^4.1.0",
     "handlebars": "^4.7.6",
-    "handlebars-helpers": "^0.10.0",
     "node-sass": "^4.14.1",
     "prettier": "2.1.2"
+  },
+  "dependencies": {
+    "babel-preset-env": "^1.7.0"
   }
 }

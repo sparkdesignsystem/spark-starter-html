@@ -2,6 +2,8 @@ const { src, dest, series } = require("gulp");
 const fs = require("fs");
 const request = require("request");
 const hb = require("gulp-hb");
+const sass = require("gulp-sass");
+var browserify = require('browserify');
 
 // fetch icons from the cdn, write handlebars partial to be consumed in 'pages' task
 function icons(cb) {
@@ -31,12 +33,21 @@ function pages(cb) {
     .on("finish", cb);
 }
 
+// run js through babel and browserify
 function js(cb) {
-  // process js, bundle
+    browserify("./src/js/main.js")
+        .transform("babelify", {presets: ["@babel/preset-env"]})
+        .bundle()
+        .pipe(fs.createWriteStream("./dist/main.js"))
+        .on("finish", cb);
 }
 
 function styles(cb) {
   // process sass, write css file
+  src("./src/styles/main.scss")
+    .pipe(sass({ includePaths: ["node_modules"] }).on("error", sass.logError))
+    .pipe(dest("./dist"))
+    .on("finish", cb);
 }
 
 function clean(cb) {
@@ -44,4 +55,4 @@ function clean(cb) {
   // delete the dist dir
 }
 
-exports.build = series(icons, pages);
+exports.build = series(icons, styles, js, pages);
