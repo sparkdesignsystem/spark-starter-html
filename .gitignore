@@ -1,4 +1,5 @@
 node_modules
 dist
-src/spark-icons.hbs
 .DS_Store
+.idea/
+/src/pages/partials/sparkIcons.hbs
