@@ -1,22 +1,18 @@
 {
   "name": "spark-starter-html",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "gulp loadIcons && webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack"
   },
-  "author": "Spark",
-  "license": "ISC",
+  "author": "Spark Dev Team <sparkdesignsystem@quickenloans.com>",
+  "license": "MIT",
   "devDependencies": {
     "@sparkdesignsystem/spark": "^14.0.0-beta.0",
     "css-loader": "^3.5.3",
-    "gulp": "^4.0.2",
     "handlebars": "^4.7.6",
-    "handlebars-helpers": "^0.10.0",
-    "handlebars-loader": "^1.7.1",
-    "html-webpack-plugin": "^3.2.0",
+    "handlebars-webpack-plugin": "^2.2.1",
     "mini-css-extract-plugin": "^0.8.2",
     "node-sass": "^4.14.1",
     "sass-loader": "^8.0.2",
