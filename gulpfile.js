@@ -1,9 +1,11 @@
-const { src, dest, series } = require("gulp");
+const { src, dest, series, watch } = require("gulp");
 const fs = require("fs");
 const request = require("request");
 const hb = require("gulp-hb");
 const sass = require("gulp-sass");
-var browserify = require('browserify');
+const browserify = require("browserify");
+const browserSync = require("browser-sync").create();
+const reload = browserSync.reload;
 
 // fetch icons from the cdn, write handlebars partial to be consumed in 'pages' task
 function icons(cb) {
@@ -35,24 +37,42 @@ function pages(cb) {
 
 // run js through babel and browserify
 function js(cb) {
-    browserify("./src/js/main.js")
-        .transform("babelify", {presets: ["@babel/preset-env"]})
-        .bundle()
-        .pipe(fs.createWriteStream("./dist/main.js"))
-        .on("finish", cb);
+  browserify("./src/js/main.js")
+    .transform("babelify", { presets: ["@babel/preset-env"] })
+    .bundle()
+    .pipe(fs.createWriteStream("./dist/main.js"))
+    .on("finish", cb);
 }
 
+// process sass, write css file
 function styles(cb) {
-  // process sass, write css file
   src("./src/styles/main.scss")
     .pipe(sass({ includePaths: ["node_modules"] }).on("error", sass.logError))
     .pipe(dest("./dist"))
     .on("finish", cb);
 }
 
-function clean(cb) {
-  // delete the icons file
-  // delete the dist dir
+// start a browser-sync server and file watchers
+function browsersync(cb) {
+  browserSync.init({
+    server: {
+      baseDir: "./dist",
+    },
+  });
+
+  watch(["./src/pages/**/*.html"], (cb) => {
+    pages(cb);
+    reload();
+  });
+  watch(["./src/js/**/*.js"], (cb) => {
+    js(cb);
+    reload();
+  });
+  watch(["./src/styles/**/*.scss"], (cb) => {
+    styles(cb);
+    reload();
+  });
 }
 
 exports.build = series(icons, styles, js, pages);
+exports.serve = series(exports.build, browsersync);
