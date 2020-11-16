@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en" class="sprk-u-JavaScript">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Spark Vanilla Starter App">
+  <link rel="stylesheet" href="bundle.css">
+  <title>Spark HTML Kitchen Sink</title>
+</head>
+
+<body>
+{{> 'partials/sparkIcons' }}
+<main data-sprk-main>
+  {{> 'templates/masthead' }}
+
+  <div class="sprk-o-CenteredColumn">
+    <div class="sprk-o-Stack sprk-o-Stack--split@s sprk-o-Box--large ">
+      <div class="sprk-o-Stack__item sprk-o-Stack__item--three-fifths@s sprk-u-prl">
+        {{> 'templates/_doclink' href="https://sparkdesignsystem.com/patterns/fundamentals/typography" text="Typography Docs"}}
+
+        {{> 'typography/h1-title'  }}
+        {{> 'typography/h5'  }}
+        {{> 'typography/body-one'  }}
+
+        <span class="sprk-c-Divider" data-id="divider-1"></span>
+
+        {{> 'templates/alerts'  }}
+        {{> 'templates/buttons' }}
+        {{> 'templates/modals' }}
+        {{> 'templates/links' }}
+      </div>
+
+      <div class="sprk-o-Stack__item sprk-o-Stack__item--two-fifths@s">
+        {{> 'templates/_doclink' href="https://sparkdesignsystem.com/patterns/components/card" text="Card Docs"}}
+
+        {{> 'card/teaser-alt'  }}
+
+        {{> 'templates/_doclink' href="https://sparkdesignsystem.com/patterns/components/accordions" text="Accordion Docs"}}
+
+        {{> 'templates/accordion'  }}
+
+      </div>
+    </div>
+
+  </div>
+  <div class="sprk-o-Box sprk-o-Box--large">
+    {{> 'templates/_doclink' href="https://sparkdesignsystem.com/patterns/components/dictionary" text="Dictionary Docs"}}
+
+    {{> 'dictionary/striped'  }}
+  </div>
+
+  <div class="sprk-o-Box sprk-o-Box--large">
+    {{> 'templates/award'  }}
+  </div>
+
+  <div class="sprk-o-Box sprk-o-Box--large">
+    {{> 'templates/input'  }}
+  </div>
+
+  <div class="sprk-o-Box sprk-o-Box--large">
+    {{> 'templates/box'  }}
+  </div>
+
+  <div class="sprk-o-Box sprk-o-Box--large">
+    {{> 'templates/centered-column'  }}
+  </div>
+
+  <div class="sprk-o-Box sprk-o-Box--large">
+    {{> 'templates/divider'  }}
+  </div>
+
+  <div class="sprk-o-Box sprk-o-Box--large">
+    {{> 'templates/dropdown'  }}
+  </div>
+
+  <div class="sprk-o-Box sprk-o-Box--large">
+    {{> 'templates/flag'  }}
+  </div>
+
+  <div class="sprk-o-Box sprk-o-Box--large">
+    {{> 'templates/highlight-board'  }}
+  </div>
+
+  <div class="sprk-o-Box sprk-o-Box--large">
+    {{> 'templates/icons'  }}
+  </div>
+
+  <div class="sprk-o-Box sprk-o-Box--large">
+    {{> 'templates/pagination'  }}
+  </div>
+
+  <div class="sprk-o-Box sprk-o-Box--large">
+    {{> 'templates/promo'  }}
+  </div>
+
+  <div class="sprk-o-Box sprk-o-Box--large">
+    {{> 'templates/stack'  }}
+  </div>
+
+  <div class="sprk-o-Box sprk-o-Box--large">
+    {{> 'templates/stepper'  }}
+  </div>
+
+  <div class="sprk-o-Box sprk-o-Box--large">
+    {{> 'templates/table'  }}
+  </div>
+
+  <div class="sprk-o-Box sprk-o-Box--large">
+    {{> 'templates/tabs'  }}
+  </div>
+
+  <div class="sprk-o-Box sprk-o-Box--large">
+    {{> 'templates/toggle'  }}
+  </div>
+
+  {{> 'templates/footer' }}
+</main>
+<script src="bundle.js"></script>
+</body>
+</html>
