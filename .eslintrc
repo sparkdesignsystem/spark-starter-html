@@ -1,0 +1,18 @@
+{
+  "extends": ["airbnb-base", "plugin:prettier/recommended"],
+  "plugins": ["import", "prettier"],
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "prettier/prettier": ["error"],
+    "no-redeclare": "off",
+    "import/no-unresolved": "off",
+    "import/no-extraneous-dependencies": "off",
+    "max-len": ["error", 80, {
+      "ignorePattern": "^import\\s.+\\sfrom\\s.+;$",
+      "ignoreUrls": true
+    }],
+    "object-curly-newline": "off"
+  }
+}
