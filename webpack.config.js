@@ -15,6 +15,7 @@ const loadIcons = (cb) => {
       rejectUnauthorized: false,
     })
     .pipe(fileStream)
+    .on('error', () => { console.log(error)})
     .on('finish', cb);
 };
 
