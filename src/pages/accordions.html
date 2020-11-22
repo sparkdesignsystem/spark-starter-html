@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en" class="sprk-u-JavaScript">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Spark Vanilla Starter App">
+  <title>Spark Accordion Demo</title>
+  <link rel="stylesheet" href="bundle.css" />
+</head>
+{{> 'partials/navigation' }}
+
+<body data-sprk-main>
+  {{> 'partials/sparkIcons' }}
+  <h2 class="sprk-demo-b-h2">FAQ</h2>
+  <main class="sprk-o-CenteredColumn sprk-u-ptl">
+    <ul class="sprk-c-Accordion sprk-o-VerticalList">
+      <li class="sprk-c-Accordion__item" data-sprk-toggle="container">
+        <button class="sprk-c-Accordion__summary" data-id="accordion-item-1" data-analytics="analytics_string_goes_here"
+          data-sprk-toggle="trigger" data-sprk-toggle-type="accordion">
+          <h3 class="sprk-c-Accordion__heading sprk-b-TypeDisplaySeven">
+            What is an Accordion?
+          </h3>
+
+          <svg class="
+                  sprk-c-Icon sprk-c-Icon--toggle
+                  sprk-c-Accordion__icon
+                  sprk-c-Icon--xl
+                " data-sprk-toggle="icon" viewBox="0 0 64 64">
+            <use xlink:href="#chevron-up-circle" data-sprk-toggle="accordionIconUseElement"></use>
+          </svg>
+        </button>
+
+        <div data-sprk-toggle="content">
+          <div class="sprk-c-Accordion__content sprk-o-Stack sprk-o-Stack--medium">
+            <p>
+              Summary/detail component. 
+            </p>
+          </div>
+        </div>
+      </li>
+
+      <li class="sprk-c-Accordion__item" data-sprk-toggle="container">
+        <button class="sprk-c-Accordion__summary" data-id="accordion-item-2" data-analytics="analytics_string_goes_here"
+          data-sprk-toggle="trigger" data-sprk-toggle-type="accordion">
+          <h3 class="sprk-c-Accordion__heading sprk-b-TypeDisplaySeven">
+            Why use a Design System?
+          </h3>
+
+          <svg class="
+                  sprk-c-Icon
+                  sprk-c-Icon--toggle
+                  sprk-c-Accordion__icon
+                  sprk-c-Icon--xl
+                " data-sprk-toggle="icon" viewBox="0 0 64 64">
+            <use xlink:href="#chevron-up-circle" data-sprk-toggle="accordionIconUseElement"></use>
+          </svg>
+        </button>
+
+        <div data-sprk-toggle="content">
+          <div class="sprk-c-Accordion__content sprk-b-TypeBodyTwo">
+            Content goes here
+          </div>
+        </div>
+      </li>
+
+      <li class="sprk-c-Accordion__item" data-sprk-toggle="container">
+        <button class="sprk-c-Accordion__summary" data-id="accordion-item-3" data-analytics="analytics_string_goes_here"
+          data-sprk-toggle="trigger" data-sprk-toggle-type="accordion">
+          <h3 class="sprk-c-Accordion__heading sprk-b-TypeDisplaySeven">
+            Should I use Spark to build my project?
+          </h3>
+
+          <svg class="
+                  sprk-c-Icon
+                  sprk-c-Icon--toggle
+                  sprk-c-Accordion__icon
+                  sprk-c-Icon--xl
+                " data-sprk-toggle="icon" viewBox="0 0 64 64">
+            <use xlink:href="#chevron-up-circle" data-sprk-toggle="accordionIconUseElement"></use>
+          </svg>
+        </button>
+
+        <div data-sprk-toggle="content">
+          <div class="sprk-c-Accordion__content sprk-b-TypeBodyTwo">
+            Content goes here
+          </div>
+        </div>
+      </li>
+    </ul>
+    <script src="bundle.js"></script>
+</body>
+
+</html>

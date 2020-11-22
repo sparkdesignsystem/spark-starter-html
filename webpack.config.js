@@ -49,7 +49,7 @@ module.exports = {
     }),
     new HandlebarsPlugin({
       entry: path.join(process.cwd(), 'src/pages', '*.html'),
-      output: path.join(process.cwd(), 'dist', 'index.html'),
+      output: path.join(process.cwd(), 'dist', '[name].html'),
       partials: [path.join(process.cwd(), 'src', 'pages', 'partials', '*.hbs')],
     }),
   ],
