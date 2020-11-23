@@ -1,18 +1,89 @@
 <!doctype html>
-<html lang="en" class="sprk-u-JavaScript">
-  <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="Spark Vanilla Starter App">
-      <title>Spark Pagination Demo</title>
-      <link rel="stylesheet" href="bundle.css"/>
-  </head>
-    {{> 'partials/navigation' }}
-  <body data-sprk-main>
-    {{> 'partials/sparkIcons' }}
-    <main  class="sprk-o-CenteredColumn sprk-u-ptl">
-pagination
-    </main>
-    <script src="bundle.js"></script>
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Spark Vanilla Starter App">
+  <title>Spark Pagination Demo</title>
+  <link rel="stylesheet" href="bundle.css" />
+</head>
+{{> 'partials/navigation' }}
+
+<body>
+  {{> 'partials/sparkIcons' }}
+  <main class="sprk-o-CenteredColumn sprk-u-ptl" data-sprk-main>
+    <h2 class="sprk-demo-b-h2">Default</h2>
+    <nav aria-label="Pagination Navigation" data-sprk-pagination="default" data-id="pagination-1">
+      <ul class="sprk-c-Pagination sprk-o-HorizontalList sprk-o-HorizontalList--spacing-medium">
+        <li>
+          <a class="sprk-c-Pagination__icon sprk-b-Link sprk-b-Link--disabled sprk-b-Link--plain" href="#nogo"
+            data-sprk-pagination="prev">
+            <span class="sprk-u-ScreenReaderText">Prev</span>
+            <svg class="sprk-c-Icon sprk-c-Icon--filled-current-color sprk-c-Icon--stroke-current-color"
+              viewBox="0 0 64 64">
+              <use xlink:href="#chevron-left"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li>
+          <a class="sprk-c-Pagination__link sprk-c-Pagination__link--current sprk-b-Link" href="#nogo"
+            data-sprk-pagination="item" aria-current="true">
+            1
+          </a>
+        </li>
+
+        <li>
+          <a class="sprk-c-Pagination__link sprk-b-Link" href="#nogo" data-sprk-pagination="item">
+            2
+          </a>
+        </li>
+
+        <li>
+          <a class="sprk-c-Pagination__link sprk-b-Link" href="#nogo" data-sprk-pagination="item">
+            3
+          </a>
+        </li>
+
+        <li>
+          <a class="sprk-c-Pagination__icon sprk-b-Link sprk-b-Link--plain" href="#nogo" data-sprk-pagination="next">
+            <span class="sprk-u-ScreenReaderText">Next</span>
+            <svg class="sprk-c-Icon sprk-c-Icon--filled-current-color sprk-c-Icon--stroke-current-color"
+              viewBox="0 0 64 64">
+              <use xlink:href="#chevron-right"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <h2 class="sprk-demo-b-h2">Pager</h2>
+    <nav aria-label="Pagination Navigation" data-id="pagination-3">
+      <ul class="sprk-c-Pagination sprk-o-HorizontalList sprk-o-HorizontalList--spacing-large">
+        <li>
+          <a class="sprk-c-Pagination__icon sprk-b-Link sprk-b-Link--plain" href="#nogo">
+            <svg class="sprk-c-Icon sprk-c-Icon--filled-current-color sprk-c-Icon--stroke-current-color"
+              viewBox="0 0 64 64">
+              <use xlink:href="#chevron-left"></use>
+            </svg>
+            <span class="sprk-u-ScreenReaderText">Prev</span>
+          </a>
+        </li>
+
+        <li>
+          <a class="sprk-c-Pagination__icon sprk-b-Link sprk-b-Link--plain" href="#nogo">
+            <svg class="sprk-c-Icon sprk-c-Icon--filled-current-color sprk-c-Icon--stroke-current-color"
+              viewBox="0 0 64 64">
+              <use xlink:href="#chevron-right"></use>
+            </svg>
+            <span class="sprk-u-ScreenReaderText">Next</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </main>
+  <script src="bundle.js"></script>
+</body>
+
 </html>

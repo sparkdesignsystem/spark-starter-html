@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="sprk-u-JavaScript">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -10,10 +10,10 @@
 </head>
 {{> 'partials/navigation' }}
 
-<body data-sprk-main>
+<body>
   {{> 'partials/sparkIcons' }}
-  <h2 class="sprk-demo-b-h2">FAQ</h2>
-  <main class="sprk-o-CenteredColumn sprk-u-ptl">
+  <main class="sprk-o-CenteredColumn sprk-u-ptl" data-sprk-main>
+    <h2 class="sprk-demo-b-h2">FAQ</h2>
     <ul class="sprk-c-Accordion sprk-o-VerticalList">
       <li class="sprk-c-Accordion__item" data-sprk-toggle="container">
         <button class="sprk-c-Accordion__summary" data-id="accordion-item-1" data-analytics="analytics_string_goes_here"
@@ -34,7 +34,7 @@
         <div data-sprk-toggle="content">
           <div class="sprk-c-Accordion__content sprk-o-Stack sprk-o-Stack--medium">
             <p>
-              Summary/detail component. 
+              Summary/detail component.
             </p>
           </div>
         </div>
@@ -89,6 +89,7 @@
       </li>
     </ul>
     <script src="bundle.js"></script>
+  </main>
 </body>
 
 </html>
