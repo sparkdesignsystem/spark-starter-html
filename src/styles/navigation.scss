@@ -16,17 +16,17 @@ $app-namespace: 'sprk-demo';
   margin-top: 1.5rem;
 }
 
-.#{$app-namespace}-c-AngularHeader a {
+.#{$app-namespace}-c-SiteHeader a {
   text-decoration: none;
 }
 
-.#{$app-namespace}-c-AngularNav {
+.#{$app-namespace}-c-SiteNav {
   color: $sprk-white;
   width: 100%;
   padding: 0;
 }
 
-.#{$app-namespace}-c-AngularNav a {
+.#{$app-namespace}-c-SiteNav a {
   display: block;
   transition: all 0.3s ease-out;
   background-color: $sprk-tab-navigation-btn-bg-color;
@@ -43,12 +43,12 @@ $app-namespace: 'sprk-demo';
   color: $sprk-black;
 }
 
-.#{$app-namespace}-c-AngularNav a:hover,
-.#{$app-namespace}-c-AngularNav a:focus {
+.#{$app-namespace}-c-SiteNav a:hover,
+.#{$app-namespace}-c-SiteNav a:focus {
   border-top: $sprk-tab-navigation-btn-hover-border-bottom;
 }
 
-.#{$app-namespace}-c-AngularNav__item--active {
+.#{$app-namespace}-c-SiteNav__item--active {
   background-color: $sprk-white;
   border-top: $sprk-tab-navigation-btn-active-border-bottom;
   color: $sprk-tab-navigation-btn-active-color;
