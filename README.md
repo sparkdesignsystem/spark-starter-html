@@ -9,15 +9,8 @@ This repository includes the Spark Design System assets, all required dependenci
 1. `clone` your forked repo with `git clone <yourRepoUrl>`.
 1. [Install Node](https://nodejs.org/en/).
 1. `cd` into the project directory and run `npm install`.
-
-## Quick Start
-
-1. Go through **Setup**.
-1. Run `npm run build` in your project directory.
-<<<<<<< HEAD
-1. Open `dist/index.html` in your web browser.
+1. Run `npm run develop` in your project directory.
 
 ## Adding Components
 
-Check out the **Adding Components** guide. (coming soon)
-=======
+Check out the [Adding Components](https://sparkdesignsystem.com/installing-spark/html-add-components) guide.
