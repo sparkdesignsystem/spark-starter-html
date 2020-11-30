@@ -1,28 +1,53 @@
 {
   "name": "spark-starter-html",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "gulp loadIcons && webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack",
+    "develop": "webpack-dev-server"
   },
-  "author": "Spark",
-  "license": "ISC",
+  "lint-staged": {
+    "*.scss": [
+      "stylelint --fix",
+      "prettier --write"
+    ],
+    "*.js": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.ts": [
+      "prettier --write"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "author": "Spark Dev Team <sparkdesignsystem@quickenloans.com>",
+  "license": "MIT",
   "devDependencies": {
-    "@sparkdesignsystem/spark": "^14.0.0-beta.0",
-    "css-loader": "^3.5.3",
-    "file-loader": "^5.1.0",
-    "gulp": "^4.0.2",
+    "@sparkdesignsystem/spark": "^14.0.0",
+    "css-loader": "^3.6.0",
+    "eslint": "^7.13.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.1.4",
     "handlebars": "^4.7.6",
     "handlebars-helpers": "^0.10.0",
-    "handlebars-loader": "^1.7.1",
-    "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^3.2.0",
+    "handlebars-webpack-plugin": "^2.2.1",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.1",
     "mini-css-extract-plugin": "^0.8.2",
     "node-sass": "^4.14.1",
+    "prettier": "^2.1.2",
     "sass-loader": "^8.0.2",
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11"
+    "stylelint": "^13.7.2",
+    "stylelint-scss": "^3.18.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   }
 }
