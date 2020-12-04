@@ -40,4 +40,5 @@ $sprk-webfonts: (
     300
   );
 
-@import '~@sparkdesignsystem/spark-styles/spark.scss';
+@import '~@sparkdesignsystem/spark-styles/_spark.scss';
+@import './navigation.scss';

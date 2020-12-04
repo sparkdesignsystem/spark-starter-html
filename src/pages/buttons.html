@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Spark Vanilla Starter App">
+  <title>Spark Button Demo</title>
+  <link rel="stylesheet" href="bundle.css" />
+</head>
+{{> 'partials/navigation' }}
+
+<body>
+  {{> 'partials/sparkIcons' }}
+  <main class="sprk-o-CenteredColumn sprk-u-ptl" data-sprk-main>
+    <h2 class="sprk-demo-b-h2">Primary</h2>
+    <button class="sprk-c-Button">
+      Button
+    </button>
+    <button class="sprk-c-Button sprk-is-Disabled" disabled>
+      Disabled
+    </button>
+    <a class="sprk-c-Button" href="#nogo">
+      A link in disguise
+    </a>
+    <h2 class="sprk-demo-b-h2">Secondary</h2>
+    <button class="sprk-c-Button sprk-c-Button--secondary">
+      Button
+    </button>
+    <button class="sprk-c-Button sprk-c-Button--secondary sprk-is-Disabled" disabled>
+      Disabled
+    </button>
+    <a class="sprk-c-Button sprk-c-Button--secondary" href="#nogo">
+      A link in disguise
+    </a>
+    <h2 class="sprk-demo-b-h2">Tertiary</h2>
+    <button class="sprk-c-Button sprk-c-Button--tertiary">
+      Button
+    </button>
+    <button class="sprk-c-Button sprk-c-Button--tertiary sprk-is-Disabled" disabled>
+      Disabled
+    </button>
+    <a class="sprk-c-Button sprk-c-Button--tertiary" href="#nogo">
+      A link in disguise
+    </a>
+    <h2 class="sprk-demo-b-h2">Quaternary</h2>
+    <button class="sprk-c-Button sprk-c-Button--quaternary">
+      Button
+    </button>
+    <button class="sprk-c-Button sprk-c-Button--quaternary sprk-is-Disabled" disabled>
+      Disabled
+    </button>
+    <a class="sprk-c-Button sprk-c-Button--quaternary" href="#nogo">
+      A link in disguise
+    </a>
+    <h2 class="sprk-demo-b-h2">Full Width Options</h2>
+    <button class="sprk-c-Button sprk-c-Button--full@xs">
+      Full @xs
+    </button>
+    <button class="sprk-c-Button sprk-c-Button--full@s">
+      Full @s
+    </button>
+    <h2 class="sprk-demo-b-h2">Spinners (on click)</h2>
+    <button class="sprk-c-Button demo1" data-sprk-spinner="click" aria-live="polite">
+      Primary
+    </button>
+    <button class="sprk-c-Button sprk-c-Button--secondary demo1" data-sprk-spinner="click" aria-live="polite"
+      data-sprk-spinner-variant="primary">
+      Secondary
+    </button>
+    <button class="sprk-c-Button sprk-c-Button--tertiary demo1" data-sprk-spinner="click" aria-live="polite"
+      data-sprk-spinner-variant="secondary">
+      Tertiary
+    </button>
+    <button class="sprk-c-Button sprk-c-Button--quaternary demo1" data-sprk-spinner="click" aria-live="polite"
+      data-sprk-spinner-variant="dark">
+      Quaternary
+    </button>
+    <button class="sprk-c-Button sprk-c-Button--tertiary" onclick="resetSpinners('demo1')">
+      Stop Spinning
+    </button>
+    <h2 class="sprk-demo-b-h2">Spinner With Options</h2>
+    <button class="sprk-c-Button demo4" data-sprk-spinner="click" aria-live="polite" data-sprk-spinner-size="large"
+      data-sprk-spinner-lightness="dark" data-sprk-spinner-aria-label="Testing" data-sprk-spinner-variant="secondary"
+      data-sprk-spinner-aria-valuetext="Testing valuetext">
+      Primary
+    </button>
+    <button class="sprk-c-Button sprk-c-Button--tertiary" onclick="resetSpinners('demo4')">
+      Stop Spinning
+    </button>
+    <h2 class="sprk-demo-b-h2">Spinner With Alternative Trigger</h2>
+    <button class="sprk-c-Button demo2" aria-live="polite">
+      Primary
+    </button>
+    <button class="sprk-c-Button sprk-c-Button--tertiary" onclick="startSpinners('demo2')">
+      Start Spinning
+    </button>
+    <button class="sprk-c-Button sprk-c-Button--tertiary" onclick="resetSpinners('demo2')">
+      Stop Spinning
+    </button>
+  </main>
+  <script src="bundle.js"></script>
+</body>
+
+</html>

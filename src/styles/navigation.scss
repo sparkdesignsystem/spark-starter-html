@@ -1,0 +1,83 @@
+$app-namespace: 'sprk-demo';
+
+.#{$app-namespace}-b-h1 {
+  content: "";
+    width: 32px;
+    border-top: 5px solid #c8102e;
+    padding: 0 0 24px;
+}
+
+.#{$app-namespace}-b-h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.#{$app-namespace}-c-SiteHeader a {
+  text-decoration: none;
+}
+
+.#{$app-namespace}-c-SiteNav {
+  color: $sprk-white;
+  width: 100%;
+  padding: 0;
+}
+
+.#{$app-namespace}-c-SiteNav a {
+  display: block;
+  transition: all 0.3s ease-out;
+  background-color: $sprk-tab-navigation-btn-bg-color;
+  font-size: $sprk-font-size-body-one;
+  font-weight: $sprk-font-weight-body-one;
+  text-align: center;
+  text-decoration: none;
+  padding: $sprk-space-inset-short-s;
+  padding-top: $sprk-space-s;
+  padding-bottom: $sprk-space-s;
+  margin-bottom: $sprk-space-s;
+  border: 0;
+  border-top: $sprk-tab-navigation-btn-border-bottom;
+  color: $sprk-black;
+}
+
+.#{$app-namespace}-c-SiteNav a:hover,
+.#{$app-namespace}-c-SiteNav a:focus {
+  border-top: $sprk-tab-navigation-btn-hover-border-bottom;
+}
+
+.#{$app-namespace}-c-SiteNav__item--active {
+  background-color: $sprk-white;
+  border-top: $sprk-tab-navigation-btn-active-border-bottom;
+  color: $sprk-tab-navigation-btn-active-color;
+}
+
+.#{$app-namespace}-b-List {
+  list-style-type: none;
+  margin-bottom: 1rem;
+}
+
+.#{$app-namespace}-b-List--inline {
+  margin: 0;
+  padding: 1rem;
+}
+
+.#{$app-namespace}-b-List--nested {
+  margin-left: 1rem;
+  list-style-type: circle;
+}
+
+.#{$app-namespace}-b-List--inline > li {
+  display: inline-block;
+}
+
+.#{$app-namespace}-b-List--spacing-m > li {
+  margin-bottom: 1rem;
+}
+
+.#{$app-namespace}-b-List--inline.#{$app-namespace}-b-List--spacing-m > li {
+  margin-bottom: 0;
+  margin-right: 1rem;
+}

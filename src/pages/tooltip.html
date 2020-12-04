@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Spark Vanilla Starter App">
+      <title>Spark Tooltip Demo</title>
+      <link rel="stylesheet" href="bundle.css"/>
+  </head>
+    {{> 'partials/navigation' }}
+  <body>
+    {{> 'partials/sparkIcons' }}
+    <main  class="sprk-o-CenteredColumn sprk-u-ptl" data-sprk-main>
+      Use Tooltips to provide info that’s not vital to completing the task. Keep the text short and stick to what’s helpful and relevant.
+      <span data-sprk-tooltip="container" class="sprk-c-Tooltip__container">
+        <button
+          type="button"
+          data-sprk-tooltip="trigger"
+          class="sprk-c-Tooltip__trigger"
+          aria-labelledby="tooltip_1"
+          type="button"
+        >
+          <svg
+            class="sprk-c-Icon sprk-c-Icon--filled"
+            aria-hidden="true"
+          >
+            <use xlink:href="#question-filled" />
+          </svg>
+        </button>
+        <span
+          data-sprk-tooltip="content"
+          class="sprk-c-Tooltip"
+          aria-hidden="true"
+          id="tooltip_1"
+          role="tooltip"
+        >
+          Use Tooltips to provide info that’s not vital to completing the task.
+          Keep the text short and stick to what’s helpful and relevant.
+        </span>
+      </span>
+      Use Tooltips to provide info that’s not vital to completing the task. Keep the text short and stick to what’s helpful and relevant.
+    </main>
+    <script src="bundle.js"></script>
+  </body>
+</html>
