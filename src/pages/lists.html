@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Spark Vanilla Starter App">
+      <title>Spark List Demo</title>
+      <link rel="stylesheet" href="bundle.css"/>
+  </head>
+    {{> 'partials/navigation' }}
+  <body>
+    {{> 'partials/sparkIcons' }}
+    <main  class="sprk-o-CenteredColumn sprk-u-ptl" data-sprk-main>
+      <h2 class="sprk-demo-b-h2">Unordered</h2>
+      <ul class="sprk-b-List">
+        <li data-id="list-item-1">Unordered List Item</li>
+        <li data-id="list-item-2">Unordered List Item</li>
+        <li data-id="list-item-3">Unordered List Item</li>
+      </ul>
+      <h2 class="sprk-demo-b-h2">Ordered</h2>
+      <ol class="sprk-b-List">
+        <li data-id="list-item-4">Ordered List Item</li>
+        <li data-id="list-item-5">Ordered List Item</li>
+        <li data-id="list-item-6">Ordered List Item</li>
+      </ol>
+      <h2 class="sprk-demo-b-h2">Indented</h2>
+      <ul class="sprk-b-List sprk-b-List--indented">
+        <li data-id="list-item-7">Indented Item</li>
+        <li data-id="list-item-8">Indented Item</li>
+        <li data-id="list-item-9">Indented Item</li>
+      </ul>
+      <h2 class="sprk-demo-b-h2">Bare</h2>
+      <ul class="sprk-b-List sprk-b-List--bare">
+        <li data-id="list-item-10">Bare List Item</li>
+        <li data-id="list-item-11">Bare List Item</li>
+        <li data-id="list-item-12">Bare List Item</li>
+      </ul>
+    </main>
+    <script src="bundle.js"></script>
+  </body>
+</html>

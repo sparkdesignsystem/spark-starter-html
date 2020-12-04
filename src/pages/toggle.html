@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Spark Vanilla Starter App">
+  <title>Spark Toggle Demo</title>
+  <link rel="stylesheet" href="bundle.css" />
+</head>
+{{> 'partials/navigation' }}
+
+<body>
+  {{> 'partials/sparkIcons' }}
+  <main class="sprk-o-CenteredColumn sprk-u-ptl" data-sprk-main>
+    <div data-sprk-toggle="container" data-id="toggle-1">
+      <button class="sprk-c-Toggle__trigger sprk-b-TypeBodyThree sprk-u-TextCrop--none" data-sprk-toggle="trigger">
+        <svg class="
+            sprk-c-Icon
+            sprk-c-Icon--xl
+            sprk-c-Icon--toggle
+            sprk-u-mrs
+          " data-sprk-toggle="icon" viewBox="0 0 64 64">
+          <use xlink:href="#chevron-down-circle"></use>
+        </svg>
+
+        My Disclaimer
+      </button>
+
+      <div data-sprk-toggle="content">
+        <p class="sprk-b-TypeBodyFour sprk-u-pts sprk-u-pbs">
+          This is an example of disclaimer content.
+          The aria-expanded="true" attribute
+          will be viewable in the DOM on
+          the toggle link when this content
+          is shown. When this content is
+          hidden the aria-expanded
+          attribute will have the value
+          of false. This helps accessibilty devices in
+          understanding that the link is a
+          control for expandable
+          content.
+        </p>
+      </div>
+    </div>
+  </main>
+  <script src="bundle.js"></script>
+</body>
+
+</html>

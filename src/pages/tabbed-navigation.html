@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Spark Vanilla Starter App">
+  <title>Spark Tabs Demo</title>
+  <link rel="stylesheet" href="bundle.css" />
+</head>
+{{> 'partials/navigation' }}
+
+<body>
+  {{> 'partials/sparkIcons' }}
+  <main class="sprk-o-CenteredColumn sprk-u-ptl" data-sprk-main>
+    <div class="sprk-c-Tabs" aria-orientation="horizontal" data-sprk-navigation="tabs" data-id="tabs-1">
+      <div class="sprk-c-Tabs__buttons" role="tablist">
+        <button class="sprk-c-Tabs__button sprk-c-Tabs__button--active" role="tab" aria-controls="target-1"
+          aria-selected="true" id="tab-1" type="button" data-id="tab-1">
+          Earth
+        </button>
+
+        <button class="sprk-c-Tabs__button" role="tab" aria-controls="target-2" aria-selected="false" id="tab-2"
+          type="button" data-id="tab-2">
+          Venus
+        </button>
+
+        <button class="sprk-c-Tabs__button" role="tab" aria-controls="target-3" aria-selected="false" id="tab-3"
+          type="button" data-id="tab-3">
+          Mars
+        </button>
+      </div>
+
+      <div class="sprk-c-Tabs__content" id="target-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1">
+        <p class="sprk-b-TypeBodyTwo">Earth is the third planet from the Sun and the only astronomical object known to
+          harbor life. About 29% of Earth's surface is land consisting of continents and islands. The remaining 71% is
+          covered with water, mostly by oceans but also lakes, rivers and other fresh water, which together constitute
+          the hydrosphere.</p>
+      </div>
+      <div class="sprk-c-Tabs__content sprk-u-HideWhenJs" id="target-2" role="tabpanel" tabindex="0"
+        aria-labelledby="tab-2">
+        <p class="sprk-b-TypeBodyTwo">Venus is the second planet from the Sun. It is named after the Roman goddess of
+          love and beauty. As the second-brightest natural object in Earth's night sky after the Moon, Venus can cast
+          shadows and can be, on rare occasion, visible to the naked eye in broad daylight.</p>
+      </div>
+      <div class="sprk-c-Tabs__content sprk-u-HideWhenJs" id="target-3" role="tabpanel" tabindex="0"
+        aria-labelledby="tab-3">
+        <p class="sprk-b-TypeBodyTwo">Mars is the fourth planet from the Sun and the second-smallest planet in the Solar
+          System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often
+          referred to as the "Red Planet". The latter refers to the effect of the iron oxide prevalent on Mars's
+          surface, which gives it a reddish appearance distinctive among the astronomical bodies visible to the naked
+          eye.</p>
+      </div>
+    </div>`
+  </main>
+  <script src="bundle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Spark Vanilla Starter App">
+  <title>Spark Links Demo</title>
+  <link rel="stylesheet" href="bundle.css" />
+</head>
+{{> 'partials/navigation' }}
+
+<body>
+  {{> 'partials/sparkIcons' }}
+  <main class="sprk-o-CenteredColumn sprk-u-ptl" data-sprk-main>
+    <div>
+      <a class="sprk-b-Link" href="#nogo">
+        Default Link
+      </a>
+    </div>
+    <div>
+      <a class="sprk-b-Link sprk-b-Link--simple" href="#nogo">
+        Simple Link
+      </a>
+    </div>
+    <div class="sprk-u-BackgroundColor--black-tint-90">
+      <a class="sprk-b-Link sprk-b-Link--light" href="#nogo">
+        Light Link
+      </a>
+    </div>
+    <div>
+      <a class="sprk-b-Link sprk-b-Link--has-icon" href="#nogo">
+        <svg class="
+        sprk-c-Icon
+        sprk-c-Icon--xl
+        sprk-u-mrs
+        sprk-c-Icon--filled-current-color
+      " viewBox="0 0 100 100">
+          <use xlink:href="#arrow-left" />
+        </svg>
+        Icon with Link
+      </a>
+    </div>
+    <div>
+      <a class="sprk-b-Link sprk-b-Link--has-icon" href="#nogo">
+        Icon with Link
+        <svg class="
+        sprk-c-Icon
+        sprk-c-Icon--xl
+        sprk-u-mrs
+        sprk-c-Icon--filled-current-color
+      " viewBox="0 0 100 100">
+          <use xlink:href="#arrow-right" />
+        </svg>
+      </a>
+    </div>
+    <div>
+      <a class="sprk-b-Link sprk-b-Link--disabled" href="#nogo">
+        Disabled Link
+      </a>
+    </div>
+    <div>
+      <a class="sprk-b-Link sprk-b-Link--simple sprk-b-Link--disabled" href="#nogo">
+        Disabled Simple Link
+      </a>
+    </div>
+    <div class="sprk-u-BackgroundColor--black-tint-90">
+      <a class="sprk-b-Link sprk-b-Link--light sprk-b-Link--disabled" href="#nogo">
+        Disabled Light Link
+      </a>
+    </div>
+    <div>
+      <a class="sprk-b-Link sprk-b-Link--has-icon sprk-b-Link--disabled" href="#nogo">
+        <svg class="
+        sprk-c-Icon
+        sprk-c-Icon--xl
+        sprk-u-mrs
+        sprk-c-Icon--filled-current-color
+      " viewBox="0 0 100 100">
+          <use xlink:href="#arrow-left" />
+        </svg>
+        Disabled with icon
+      </a>
+    </div>
+    <div>
+      <a class="sprk-b-Link sprk-b-Link--has-icon sprk-b-Link--disabled" href="#nogo">
+        Disabled with icon
+        <svg class="
+        sprk-c-Icon
+        sprk-c-Icon--xl
+        sprk-u-mrs
+        sprk-c-Icon--filled-current-color
+      " viewBox="0 0 100 100">
+          <use xlink:href="#arrow-right" />
+        </svg>
+      </a>
+    </div>
+  </main>
+  <script src="bundle.js"></script>
+</body>
+
+</html>
