@@ -72,14 +72,16 @@ const setupAutocomplete = (container) => {
   }
 
   const filterList = (list, filterString, liveAnnouncer) => {
-    const listItems = list.querySelectorAll('li:not([' + noneFoundAttribute + '])');
+    const listItems =
+      list.querySelectorAll('li:not([' + noneFoundAttribute + '])');
     resetResults(listItems);
     const matchingResults = [];
 
     listItems.forEach((listItem) => {
       // pinned results are always visible
       if (listItem.hasAttribute(pinnedAttribute)) {
-        listItem.querySelector('span[data-myapp-filter-text]').innerHTML = filterString;
+        listItem.querySelector('span[data-myapp-filter-text]')
+          .innerHTML = filterString;
         matchingResults.push(listItem);
       } else {
         if (filterString.length === 0) {
@@ -90,13 +92,15 @@ const setupAutocomplete = (container) => {
           if (listItem.childNodes.length > 1) {
             listItem.childNodes.forEach((childNode) => {
               if (childNode.innerHTML) {
-                const startIndex = childNode.innerHTML.toLowerCase().indexOf(filterString.toLowerCase());
+                const startIndex = childNode.innerHTML.toLowerCase()
+                  .indexOf(filterString.toLowerCase());
                 if (startIndex !== -1) {
                   foundMatch = true;
                   const endIndex = startIndex + filterString.length;
 
                   // not necessarily identical to the filter because of caps
-                  const replacedString = childNode.innerHTML.substring(startIndex, endIndex);
+                  const replacedString =
+                    childNode.innerHTML.substring(startIndex, endIndex);
 
                   childNode.innerHTML = childNode.innerHTML.replace(
                     replacedString,
@@ -106,13 +110,16 @@ const setupAutocomplete = (container) => {
               }
             });
           } else {
-            const startIndex = listItem.innerHTML.toLowerCase().indexOf(filterString.toLowerCase());
+            const startIndex =
+              listItem.innerHTML.toLowerCase()
+                .indexOf(filterString.toLowerCase());
             if (startIndex !== -1) {
               foundMatch = true;
               const endIndex = startIndex + filterString.length;
 
               // not necessarily identical to the filter because of caps
-              const replacedString = listItem.innerHTML.substring(startIndex, endIndex);
+              const replacedString =
+                listItem.innerHTML.substring(startIndex, endIndex);
 
               listItem.innerHTML = listItem.innerHTML.replace(
                 replacedString,
@@ -131,7 +138,8 @@ const setupAutocomplete = (container) => {
       }
     })
 
-    const noneFoundItem = container.querySelector('li[' + noneFoundAttribute + ']');
+    const noneFoundItem =
+      container.querySelector('li[' + noneFoundAttribute + ']');
     if (matchingResults.length === 0) {
       liveAnnouncer.innerText = "0 results found.";
       noneFoundItem && noneFoundItem.classList.remove(filteredOutClass);
@@ -152,7 +160,8 @@ const setupAutocomplete = (container) => {
 
     // handle the demo case for showing error state
     const errorContainer = document.querySelector('#input--error-container5');
-    const errorTextContainer = errorContainer.querySelector('.sprk-b-ErrorText');
+    const errorTextContainer =
+      errorContainer.querySelector('.sprk-b-ErrorText');
     if (input.getAttribute('data-myapp-autocomplete-value') === 'cucumber') {
       input.classList.add('sprk-b-TextInput--error');
       errorContainer.classList.remove('sprk-u-Display--none');
@@ -212,14 +221,18 @@ const setupAutocomplete = (container) => {
 
     interval = setInterval(() => {
        // remove the old entries
-      list.querySelectorAll('li:not([data-myapp-autocomplete-loading])').forEach(
-        (node) => { node.remove() }
+      list.querySelectorAll('li:not([data-myapp-autocomplete-loading])')
+        .forEach((node) => { node.remove() }
       );
 
       const searchResults = simulateApiSearch(filterText);
 
       searchResults.forEach((result) => {
-        list.appendChild(buildSearchResult(result.displayString, result.selectedString, result.valueString));
+        list.appendChild(
+          buildSearchResult(
+            result.displayString, result.selectedString, result.valueString
+          )
+        );
       });
 
       liveAnnouncer.innerText = "5 results found.";
