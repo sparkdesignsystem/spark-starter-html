@@ -62,13 +62,13 @@ const setupAutocomplete = (container) => {
       resetResults(list.querySelectorAll('li'));
       list.classList.add('sprk-u-Display--none');
       input.removeAttribute('aria-activedescendant');
-      input.setAttribute('aria-expanded', false);
+      input.parentNode.setAttribute('aria-expanded', false);
     }
   };
 
   const showList = (list, input) => {
     list.classList.remove('sprk-u-Display--none');
-    input.setAttribute('aria-expanded', 'true')
+    input.parentNode.setAttribute('aria-expanded', 'true')
   }
 
   const filterList = (list, filterString, liveAnnouncer) => {
