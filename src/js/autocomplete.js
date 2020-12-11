@@ -212,6 +212,7 @@ const setupAutocomplete = (container) => {
     listItem.classList.add('sprk-c-Autocomplete__result');
     listItem.setAttribute('data-myapp-autocomplete-text', selectedString);
     listItem.setAttribute('data-myapp-autocomplete-value', valueString);
+    listItem.setAttribute('role', 'option');
     listItem.id = 'address_' + valueString;
     return listItem;
   }
