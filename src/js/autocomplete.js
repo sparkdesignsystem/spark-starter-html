@@ -206,6 +206,7 @@ const setupAutocomplete = (container) => {
   const buildSearchResult = (displayString, selectedString, valueString) => {
     let listItem = document.createElement('li');
     listItem.innerHTML = displayString;
+    listItem.classList.add('sprk-c-Autocomplete__result');
     listItem.setAttribute('data-myapp-autocomplete-text', selectedString);
     listItem.setAttribute('data-myapp-autocomplete-value', valueString);
     return listItem;
