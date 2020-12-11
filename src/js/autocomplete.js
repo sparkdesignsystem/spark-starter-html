@@ -11,6 +11,7 @@ const noSelectAttribute = 'data-sprk-autocomplete-no-select';
 const noneFoundAttribute = 'data-myapp-autocomplete-no-results-found';
 const activeClass = 'sprk-c-Autocomplete__results--active';
 const pinnedAttribute = 'data-sprk-myapp-autocomplete-pinned';
+const spinnerAttribute = 'data-myapp-autocomplete-loading';
 
 // Returns childNode's first ancestor node of type ancestorNodeType, or null
 const getFirstAncestorOfType = (childNode, ancestorNodeType) => {
@@ -41,6 +42,8 @@ const setupAutocomplete = (container) => {
         result.querySelector('span[data-myapp-filter-text]').innerHTML = '';
       } else if (result.hasAttribute(noneFoundAttribute)) {
         // dont do anything to the 404
+      } else if (result.hasAttribute(spinnerAttribute)) {
+        // dont do anything to the loading spinner
       } else {
         result.classList.remove(filteredOutClass);
         result.classList.remove(activeClass);
@@ -209,6 +212,7 @@ const setupAutocomplete = (container) => {
     listItem.classList.add('sprk-c-Autocomplete__result');
     listItem.setAttribute('data-myapp-autocomplete-text', selectedString);
     listItem.setAttribute('data-myapp-autocomplete-value', valueString);
+    listItem.id = 'address_' + valueString;
     return listItem;
   }
 
