@@ -9,7 +9,7 @@ import {
 const filteredOutClass = "filtered-out";
 const noSelectAttribute = 'data-sprk-autocomplete-no-select';
 const noneFoundAttribute = 'data-myapp-autocomplete-no-results-found';
-const activeClass = 'sprk-c-Autocomplete__results--active';
+const activeClass = 'sprk-c-Autocomplete__result--active';
 const pinnedAttribute = 'data-sprk-myapp-autocomplete-pinned';
 const spinnerAttribute = 'data-myapp-autocomplete-loading';
 
