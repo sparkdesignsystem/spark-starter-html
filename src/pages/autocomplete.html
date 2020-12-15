@@ -13,430 +13,410 @@
 <body>
   {{> 'partials/sparkIcons' }}
   <main class="sprk-o-CenteredColumn sprk-u-pal" data-sprk-main>
-
-
-
     <h2 class="sprk-b-TypeDisplayFive sprk-u-mbl">Basic Filter</h2>
 
-    <div data-sprk-autocomplete="container">
+    <div class="sprk-b-InputContainer" data-sprk-autocomplete="container">
       <div id="autocomplete_announcer5" aria-live="polite" class="sprk-u-ScreenReaderText"></div>
 
-      <div class="sprk-b-InputContainer">
-        <label id="autocomplete-label-5" class="sprk-b-Label" for="autocomplete-input5">
-          Choose a Fruit
-        </label>
-        <div class="sprk-b-TextInputIconContainer" role="combobox" aria-haspopup="listbox" aria-expanded="false"
-          aria-labelledby="autocomplete-label-5" aria-owns="thelistbox">
-          <svg class="sprk-c-Icon sprk-c-Icon--filled-current-color sprk-c-Icon--stroke-current-color"
-            viewBox="0 0 64 64" aria-hidden="true">
-            <use xlink:href="#search" />
-          </svg>
+      <label id="autocomplete-label-5" class="sprk-b-Label" for="autocomplete-input5">
+        Choose a Fruit
+      </label>
+      <div class="sprk-b-TextInputIconContainer" role="combobox" aria-haspopup="listbox" aria-expanded="false"
+        aria-labelledby="autocomplete-label-5">
+        <svg class="sprk-c-Icon sprk-c-Icon--filled-current-color sprk-c-Icon--stroke-current-color" viewBox="0 0 64 64"
+          aria-hidden="true">
+          <use xlink:href="#search" />
+        </svg>
 
-          <input class="
+        <input class="
               sprk-b-TextInput
               sprk-b-TextInput--has-svg-icon
               sprk-u-Width-100
             " id="autocomplete-input5" type="text" aria-autocomplete="list" aria-describedby="input--error-container5"
-            autocomplete="off" autocapitalize="off" spellcheck="false">
-        </div>
+          autocomplete="off" autocapitalize="off" spellcheck="false">
+      </div>
 
-        <ul class="sprk-c-Autocomplete__results sprk-u-Display--none" role="listbox"
-          aria-labelledby="autocomplete-label-5" id="thelistbox">
-          <li class="sprk-c-Autocomplete__result" role="option" id="item_5_1" data-myapp-autocomplete-value="apple"
-            data-myapp-autocomplete-text="Apple">
-            Apple
-          </li>
-          <li class="sprk-c-Autocomplete__result" role="option" id="item_5_2" data-myapp-autocomplete-value="Apricot"
-            data-myapp-autocomplete-text="Apricot">Apricot</li>
-          <li class="sprk-c-Autocomplete__result" role="option" id="item_5_3" data-myapp-autocomplete-value="Avocado"
-            data-myapp-autocomplete-text="Avocado">Avocado</li>
-          <li class="sprk-c-Autocomplete__result" role="option" id="item_5_4" data-myapp-autocomplete-value="banana"
-            data-myapp-autocomplete-text="Banana">
-            Banana
-          </li>
-          <li class="sprk-c-Autocomplete__result" role="option" id="item_5_5" data-myapp-autocomplete-value="Blackberry"
-            data-myapp-autocomplete-text="Blackberry">Blackberry</li>
-          <li class="sprk-c-Autocomplete__result" role="option" id="item_5_6" data-myapp-autocomplete-value="Blueberry"
-            data-myapp-autocomplete-text="Blueberry">Blueberry</li>
-          <li class="sprk-c-Autocomplete__result" role="option" id="item_5_7" data-myapp-autocomplete-value="Clementine"
-            data-myapp-autocomplete-text="Clementine">Clementine</li>
-          <li class="sprk-c-Autocomplete__result" role="option" id="item_5_8" data-myapp-autocomplete-value="cucumber"
-            data-myapp-autocomplete-text="Cucumber">
-            Cucumber
-          </li>
-          <li class="sprk-c-Autocomplete__result" role="option" id="item_5_9" data-myapp-autocomplete-value="Fig"
-            data-myapp-autocomplete-text="Fig">Fig</li>
-          <li class="sprk-c-Autocomplete__result" role="option" id="item_5_10" data-myapp-autocomplete-value="Grape"
-            data-myapp-autocomplete-text="Grape">Grape</li>
-          <li class="sprk-c-Autocomplete__result" role="option" id="item_5_11" data-myapp-autocomplete-value="Kumquat"
-            data-myapp-autocomplete-text="Kumquat">Kumquat</li>
-          <li class="sprk-c-Autocomplete__result" role="option" id="item_5_12" data-myapp-autocomplete-value="lemon"
-            data-myapp-autocomplete-text="Lemon">
-            Lemon
-          </li>
-          <li class="sprk-c-Autocomplete__result" role="option" id="item_5_13" data-myapp-autocomplete-value="Papaya"
-            data-myapp-autocomplete-text="Papaya">Papaya</li>
-          <li class="sprk-c-Autocomplete__result" data-myapp-autocomplete-no-results-found>
-            <div class="sprk-o-Flag">
-              <div class="sprk-o-Flag__figure">
-                <svg class="sprk-c-Icon sprk-c-Icon--l sprk-c-Icon--filled sprk-c-Icon--filled-current-color"
-                  aria-hidden="true" viewBox="0 0 100 100">
-                  <use xlink:href="#exclamation-filled" />
-                </svg>
-              </div>
-              <div class="sprk-o-Flag__body">
-                <div class="sprk-b-TypeBodyOne">No Matches Found</div>
-                <div>Please check your spelling and try again.</div>
-              </div>
+      <ul class="sprk-c-Autocomplete__results sprk-u-Display--none" role="listbox"
+        aria-labelledby="autocomplete-label-5">
+        <li class="sprk-c-Autocomplete__result" role="option" id="item_5_1" data-myapp-autocomplete-value="apple"
+          data-myapp-autocomplete-text="Apple">
+          Apple
+        </li>
+        <li class="sprk-c-Autocomplete__result" role="option" id="item_5_2" data-myapp-autocomplete-value="Apricot"
+          data-myapp-autocomplete-text="Apricot">Apricot</li>
+        <li class="sprk-c-Autocomplete__result" role="option" id="item_5_3" data-myapp-autocomplete-value="Avocado"
+          data-myapp-autocomplete-text="Avocado">Avocado</li>
+        <li class="sprk-c-Autocomplete__result" role="option" id="item_5_4" data-myapp-autocomplete-value="banana"
+          data-myapp-autocomplete-text="Banana">
+          Banana
+        </li>
+        <li class="sprk-c-Autocomplete__result" role="option" id="item_5_5" data-myapp-autocomplete-value="Blackberry"
+          data-myapp-autocomplete-text="Blackberry">Blackberry</li>
+        <li class="sprk-c-Autocomplete__result" role="option" id="item_5_6" data-myapp-autocomplete-value="Blueberry"
+          data-myapp-autocomplete-text="Blueberry">Blueberry</li>
+        <li class="sprk-c-Autocomplete__result" role="option" id="item_5_7" data-myapp-autocomplete-value="Clementine"
+          data-myapp-autocomplete-text="Clementine">Clementine</li>
+        <li class="sprk-c-Autocomplete__result" role="option" id="item_5_8" data-myapp-autocomplete-value="cucumber"
+          data-myapp-autocomplete-text="Cucumber">
+          Cucumber
+        </li>
+        <li class="sprk-c-Autocomplete__result" role="option" id="item_5_9" data-myapp-autocomplete-value="Fig"
+          data-myapp-autocomplete-text="Fig">Fig</li>
+        <li class="sprk-c-Autocomplete__result" role="option" id="item_5_10" data-myapp-autocomplete-value="Grape"
+          data-myapp-autocomplete-text="Grape">Grape</li>
+        <li class="sprk-c-Autocomplete__result" role="option" id="item_5_11" data-myapp-autocomplete-value="Kumquat"
+          data-myapp-autocomplete-text="Kumquat">Kumquat</li>
+        <li class="sprk-c-Autocomplete__result" role="option" id="item_5_12" data-myapp-autocomplete-value="lemon"
+          data-myapp-autocomplete-text="Lemon">
+          Lemon
+        </li>
+        <li class="sprk-c-Autocomplete__result" role="option" id="item_5_13" data-myapp-autocomplete-value="Papaya"
+          data-myapp-autocomplete-text="Papaya">Papaya</li>
+        <li class="sprk-c-Autocomplete__result" data-myapp-autocomplete-no-results-found>
+          <div class="sprk-o-Flag">
+            <div class="sprk-o-Flag__figure">
+              <svg class="sprk-c-Icon sprk-c-Icon--l sprk-c-Icon--filled sprk-c-Icon--filled-current-color"
+                aria-hidden="true" viewBox="0 0 100 100">
+                <use xlink:href="#exclamation-filled" />
+              </svg>
             </div>
-          </li>
-        </ul>
-
-        <div class="sprk-b-ErrorContainer sprk-u-Display--none" id="input--error-container5">
-          <svg class="sprk-c-Icon sprk-b-ErrorIcon" viewBox="0 0 64 64">
-            <use xlink:href="#exclamation-filled" />
-          </svg>
-          <div class="sprk-b-ErrorText">
+            <div class="sprk-o-Flag__body">
+              <div class="sprk-b-TypeBodyOne">No Matches Found</div>
+              <div>Please check your spelling and try again.</div>
+            </div>
           </div>
+        </li>
+      </ul>
+
+      <div class="sprk-b-ErrorContainer sprk-u-Display--none" id="input--error-container5">
+        <svg class="sprk-c-Icon sprk-b-ErrorIcon" viewBox="0 0 64 64">
+          <use xlink:href="#exclamation-filled" />
+        </svg>
+        <div class="sprk-b-ErrorText">
         </div>
       </div>
     </div>
 
     <h2 class="sprk-b-TypeDisplayFive sprk-u-mbl">Disallow Freeform Entries</h2>
 
-    <div data-sprk-autocomplete="container">
+    <div class="sprk-b-InputContainer" data-sprk-autocomplete="container">
       <div id="autocomplete_announcer8" aria-live="polite" class="sprk-u-ScreenReaderText"></div>
+      <label id="autocomplete-label8" for="autocomplete-input8" class="sprk-b-Label">
+        Choose a Fruit
+      </label>
+      <div class="sprk-b-TextInputIconContainer" role="combobox" aria-haspopup="listbox" aria-expanded="false"
+        aria-labelledby="autocomplete-label8">
+        <svg class="sprk-c-Icon sprk-c-Icon--filled-current-color sprk-c-Icon--stroke-current-color" viewBox="0 0 64 64"
+          aria-hidden="true">
+          <use xlink:href="#search" />
+        </svg>
 
-      <div class="sprk-b-InputContainer">
-        <label id="autocomplete-label8" for="autocomplete-input8" class="sprk-b-Label">
-          Choose a Fruit
-        </label>
-        <div class="sprk-b-TextInputIconContainer" role="combobox" aria-haspopup="listbox" aria-expanded="false"
-          aria-labelledby="autocomplete-label8">
-          <svg class="sprk-c-Icon sprk-c-Icon--filled-current-color sprk-c-Icon--stroke-current-color"
-            viewBox="0 0 64 64" aria-hidden="true">
-            <use xlink:href="#search" />
-          </svg>
-
-          <input class="
+        <input class="
               sprk-b-TextInput
               sprk-b-TextInput--has-svg-icon
               sprk-u-Width-100
             " id="autocomplete-input8" type="text" aria-describedby="input--error-container8" aria-autocomplete="list"
-            autocomplete="off" autocapitalize="off" spellcheck="false" data-myapp-autocomplete-no-freeform>
-        </div>
+          autocomplete="off" autocapitalize="off" spellcheck="false" data-myapp-autocomplete-no-freeform>
+      </div>
 
-        <ul class="sprk-c-Autocomplete__results sprk-u-Display--none" role="listbox"
-          aria-labelledby="autocomplete-label8">
-          <li class="sprk-c-Autocomplete__result" role="option" id="item_8_1" data-myapp-autocomplete-value="apple"
-            data-myapp-autocomplete-text="Apple">
-            Apple
-          </li>
-          <li class="sprk-c-Autocomplete__result" role="option" id="item_8_2" data-myapp-autocomplete-value="banana"
-            data-myapp-autocomplete-text="Banana">
-            Banana
-          </li>
-          <li class="sprk-c-Autocomplete__result" role="option" id="item_8_3" data-myapp-autocomplete-value="lemon"
-            data-myapp-autocomplete-text="Lemon">
-            Lemon
-          </li>
-          <li class="sprk-c-Autocomplete__result" data-myapp-autocomplete-no-results-found>
-            <div class="sprk-o-Flag">
-              <div class="sprk-o-Flag__figure">
-                <svg class="sprk-c-Icon sprk-c-Icon--l sprk-c-Icon--filled sprk-c-Icon--filled-current-color"
-                  viewBox="0 0 100 100">
-                  <use xlink:href="#exclamation-filled" />
-                </svg>
-              </div>
-              <div class="sprk-o-Flag__body">
-                <div class="sprk-b-TypeBodyOne">No Matches Found</div>
-                <div>Please check your spelling and try again.</div>
-              </div>
+      <ul class="sprk-c-Autocomplete__results sprk-u-Display--none" role="listbox"
+        aria-labelledby="autocomplete-label8">
+        <li class="sprk-c-Autocomplete__result" role="option" id="item_8_1" data-myapp-autocomplete-value="apple"
+          data-myapp-autocomplete-text="Apple">
+          Apple
+        </li>
+        <li class="sprk-c-Autocomplete__result" role="option" id="item_8_2" data-myapp-autocomplete-value="banana"
+          data-myapp-autocomplete-text="Banana">
+          Banana
+        </li>
+        <li class="sprk-c-Autocomplete__result" role="option" id="item_8_3" data-myapp-autocomplete-value="lemon"
+          data-myapp-autocomplete-text="Lemon">
+          Lemon
+        </li>
+        <li class="sprk-c-Autocomplete__result" data-myapp-autocomplete-no-results-found>
+          <div class="sprk-o-Flag">
+            <div class="sprk-o-Flag__figure">
+              <svg class="sprk-c-Icon sprk-c-Icon--l sprk-c-Icon--filled sprk-c-Icon--filled-current-color"
+                viewBox="0 0 100 100">
+                <use xlink:href="#exclamation-filled" />
+              </svg>
             </div>
-          </li>
-        </ul>
-
-        <div class="sprk-b-ErrorContainer sprk-u-Display--none" id="input--error-container8">
-          <svg class="sprk-c-Icon sprk-b-ErrorIcon" viewBox="0 0 64 64">
-            <use xlink:href="#exclamation-filled" />
-          </svg>
-          <div class="sprk-b-ErrorText">
+            <div class="sprk-o-Flag__body">
+              <div class="sprk-b-TypeBodyOne">No Matches Found</div>
+              <div>Please check your spelling and try again.</div>
+            </div>
           </div>
+        </li>
+      </ul>
+
+      <div class="sprk-b-ErrorContainer sprk-u-Display--none" id="input--error-container8">
+        <svg class="sprk-c-Icon sprk-b-ErrorIcon" viewBox="0 0 64 64">
+          <use xlink:href="#exclamation-filled" />
+        </svg>
+        <div class="sprk-b-ErrorText">
         </div>
       </div>
     </div>
 
     <h2 class="sprk-b-TypeDisplayFive sprk-u-mbl">Multiline Results</h2>
 
-    <div data-sprk-autocomplete="container">
+    <div class="sprk-b-InputContainer" data-sprk-autocomplete="container">
       <div id="autocomplete_announcer2" aria-live="polite" class="sprk-u-ScreenReaderText"></div>
-
-      <div class="sprk-b-InputContainer">
-        <label id="autocomplete-label2" for="autocomplete-input2" class="sprk-b-Label">
-          Choose a City
-        </label>
-        <div class="sprk-b-TextInputIconContainer" role="combobox" aria-haspopup="listbox" aria-expanded="false"
-          aria-labelledby="autocomplete-label2">
-          <svg class="sprk-c-Icon sprk-c-Icon--filled-current-color sprk-c-Icon--stroke-current-color"
-            viewBox="0 0 64 64" aria-hidden="true">
-            <use xlink:href="#search" />
-          </svg>
-          <input placeholder="Choose a City" class="
+      <label id="autocomplete-label2" for="autocomplete-input2" class="sprk-b-Label">
+        Choose a City
+      </label>
+      <div class="sprk-b-TextInputIconContainer" role="combobox" aria-haspopup="listbox" aria-expanded="false"
+        aria-labelledby="autocomplete-label2">
+        <svg class="sprk-c-Icon sprk-c-Icon--filled-current-color sprk-c-Icon--stroke-current-color" viewBox="0 0 64 64"
+          aria-hidden="true">
+          <use xlink:href="#search" />
+        </svg>
+        <input placeholder="Choose a City" class="
                   sprk-b-TextInput
                   sprk-b-TextInput--has-svg-icon
                   sprk-u-Width-100
                 " id="autocomplete-input2" type="text" aria-autocomplete="list"
-            aria-describedby="input--error-container2" autocomplete="off" autocapitalize="off" spellcheck="false">
-        </div>
-
-        <ul class="sprk-c-Autocomplete__results sprk-u-Display--none" role="listbox"
-          aria-labelledby="autocomplete-label2">
-          <li class="sprk-c-Autocomplete__result" role="option" id="item_2_1" data-myapp-autocomplete-value="detroit"
-            data-myapp-autocomplete-text="Detroit, Michigan">
-            <div class="sprk-u-FontWeight--bold">Detroit</div>
-            <div class="sprk-u-FontStyle--italic">Michigan</div>
-          </li>
-          <li class="sprk-c-Autocomplete__result" role="option" id="item_2_2" data-myapp-autocomplete-value="chicago"
-            data-myapp-autocomplete-text="Chicago, Illinois">
-            <div class="sprk-u-FontWeight--bold">Chicago</div>
-            <div class="sprk-u-FontStyle--italic">Illinois</div>
-          </li>
-          <li class="sprk-c-Autocomplete__result" role="option" id="item_2_3" data-myapp-autocomplete-value="newyork"
-            data-myapp-autocomplete-text="New York, New York">
-            <div class="sprk-u-FontWeight--bold">New York</div>
-            <div class="sprk-u-FontStyle--italic">New York</div>
-          </li>
-          <li class="sprk-c-Autocomplete__result" role="option" id="item_2_4" data-myapp-autocomplete-value="portland"
-            data-myapp-autocomplete-text="Portland, Oregon">
-            <div class="sprk-u-FontWeight--bold">Portland</div>
-            <div class="sprk-u-FontStyle--italic">Oregon</div>
-          </li>
-          <li class="sprk-c-Autocomplete__result" role="option" id="item_2_5" data-myapp-autocomplete-value="sanfran"
-            data-myapp-autocomplete-text="San Francisco, California">
-            <div class="sprk-u-FontWeight--bold">San Francisco</div>
-            <div class="sprk-u-FontStyle--italic">California</div>
-          </li>
-          <li class="sprk-c-Autocomplete__result" data-myapp-autocomplete-no-results-found>
-            <div class="sprk-o-Flag">
-              <div class="sprk-o-Flag__figure">
-                <svg class="sprk-c-Icon sprk-c-Icon--l sprk-c-Icon--filled sprk-c-Icon--filled-current-color"
-                  viewBox="0 0 100 100">
-                  <use xlink:href="#exclamation-filled" />
-                </svg>
-              </div>
-              <div class="sprk-o-Flag__body">
-                <div class="sprk-b-TypeBodyOne">No Matches Found</div>
-                <div>Please check your spelling and try again.</div>
-              </div>
-            </div>
-          </li>
-        </ul>
-        <div class="sprk-b-ErrorContainer" id="input--error-container2"></div>
+          aria-describedby="input--error-container2" autocomplete="off" autocapitalize="off" spellcheck="false">
       </div>
+
+      <ul class="sprk-c-Autocomplete__results sprk-u-Display--none" role="listbox"
+        aria-labelledby="autocomplete-label2">
+        <li class="sprk-c-Autocomplete__result" role="option" id="item_2_1" data-myapp-autocomplete-value="detroit"
+          data-myapp-autocomplete-text="Detroit, Michigan">
+          <div class="sprk-u-FontWeight--bold">Detroit</div>
+          <div class="sprk-u-FontStyle--italic">Michigan</div>
+        </li>
+        <li class="sprk-c-Autocomplete__result" role="option" id="item_2_2" data-myapp-autocomplete-value="chicago"
+          data-myapp-autocomplete-text="Chicago, Illinois">
+          <div class="sprk-u-FontWeight--bold">Chicago</div>
+          <div class="sprk-u-FontStyle--italic">Illinois</div>
+        </li>
+        <li class="sprk-c-Autocomplete__result" role="option" id="item_2_3" data-myapp-autocomplete-value="newyork"
+          data-myapp-autocomplete-text="New York, New York">
+          <div class="sprk-u-FontWeight--bold">New York</div>
+          <div class="sprk-u-FontStyle--italic">New York</div>
+        </li>
+        <li class="sprk-c-Autocomplete__result" role="option" id="item_2_4" data-myapp-autocomplete-value="portland"
+          data-myapp-autocomplete-text="Portland, Oregon">
+          <div class="sprk-u-FontWeight--bold">Portland</div>
+          <div class="sprk-u-FontStyle--italic">Oregon</div>
+        </li>
+        <li class="sprk-c-Autocomplete__result" role="option" id="item_2_5" data-myapp-autocomplete-value="sanfran"
+          data-myapp-autocomplete-text="San Francisco, California">
+          <div class="sprk-u-FontWeight--bold">San Francisco</div>
+          <div class="sprk-u-FontStyle--italic">California</div>
+        </li>
+        <li class="sprk-c-Autocomplete__result" data-myapp-autocomplete-no-results-found>
+          <div class="sprk-o-Flag">
+            <div class="sprk-o-Flag__figure">
+              <svg class="sprk-c-Icon sprk-c-Icon--l sprk-c-Icon--filled sprk-c-Icon--filled-current-color"
+                viewBox="0 0 100 100">
+                <use xlink:href="#exclamation-filled" />
+              </svg>
+            </div>
+            <div class="sprk-o-Flag__body">
+              <div class="sprk-b-TypeBodyOne">No Matches Found</div>
+              <div>Please check your spelling and try again.</div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="sprk-b-ErrorContainer" id="input--error-container2"></div>
     </div>
 
     <h2 class="sprk-b-TypeDisplayFive sprk-u-mbl">Pinned Results</h2>
-    <div data-sprk-autocomplete="container">
+
+    <div class="sprk-b-InputContainer" data-sprk-autocomplete="container">
       <div id="autocomplete_announcer3" aria-live="polite" class="sprk-u-ScreenReaderText"></div>
+      <label for="autocomplete-input3" id="autocomplete-label3" class="sprk-b-Label">
+        Search for Homes in Your Area
+      </label>
 
-      <div class="sprk-b-InputContainer">
-        <label for="autocomplete-input3" id="autocomplete-label3" class="sprk-b-Label">
-          Search for Homes in Your Area
-        </label>
+      <div class="sprk-b-TextInputIconContainer" role="combobox" aria-haspopup="listbox" aria-expanded="false"
+        aria-labelledby="autocomplete-label3">
 
-        <div class="sprk-b-TextInputIconContainer" role="combobox" aria-haspopup="listbox" aria-expanded="false"
-          aria-labelledby="autocomplete-label3">
+        <svg class="sprk-c-Icon sprk-c-Icon--filled-current-color sprk-c-Icon--stroke-current-color" viewBox="0 0 64 64"
+          aria-hidden="true">
+          <use xlink:href="#search" />
+        </svg>
 
-          <svg class="sprk-c-Icon sprk-c-Icon--filled-current-color sprk-c-Icon--stroke-current-color"
-            viewBox="0 0 64 64" aria-hidden="true">
-            <use xlink:href="#search" />
-          </svg>
-
-          <input class="
+        <input class="
               sprk-b-TextInput
               sprk-b-TextInput--has-svg-icon
               sprk-u-Width-100
             " id="autocomplete-input3" type="text" aria-autocomplete="list" aria-describedby="input--error-container"
-            autocomplete="off" autocapitalize="off" spellcheck="false">
-        </div>
-
-        <ul class="sprk-c-Autocomplete__results sprk-u-Display--none" role="listbox"
-          aria-labelledby="autocomplete-label3">
-          <li class="sprk-c-Autocomplete__result" data-sprk-autocomplete-no-select data-sprk-myapp-autocomplete-pinned>
-            <div class="sprk-o-Flag">
-              <div class="sprk-o-Flag__figure">
-                <svg class="sprk-c-Icon sprk-c-Icon--l sprk-c-Icon--filled sprk-c-Icon--filled-current-color"
-                  viewBox="0 0 34 34">
-                  <use xlink:href="#townhouse" />
-                </svg>
-              </div>
-              <div class="sprk-o-Flag__body">
-                <a class="sprk-b-Link sprk-b-Link--simple" href="javascript:alert('link to somewhere');">
-                  <div>Homes in <span data-myapp-filter-text class="highlighted"></span></div>
-                </a>
-              </div>
-            </div>
-          </li>
-          <li class="sprk-c-Autocomplete__result" data-sprk-autocomplete-no-select data-sprk-myapp-autocomplete-pinned>
-            <div class="sprk-o-Flag">
-              <div class="sprk-o-Flag__figure">
-                <svg class="sprk-c-Icon sprk-c-Icon--l sprk-c-Icon--filled sprk-c-Icon--filled-current-color"
-                  viewBox="0 0 34 34">
-                  <use xlink:href="#rates" />
-                </svg>
-              </div>
-              <div class="sprk-o-Flag__body">
-                <a class="sprk-b-Link sprk-b-Link--simple" href="javascript:alert('link to somewhere');">
-                  <div>Trends in <span data-myapp-filter-text class="highlighted"></span></div>
-                </a>
-              </div>
-            </div>
-          </li>
-          <li class="sprk-c-Autocomplete__result" role="option" id="item_3_1" data-myapp-autocomplete-value="detroit"
-            data-myapp-autocomplete-text="Detroit, Michigan">
-            Detroit, Michigan
-          </li>
-          <li class="sprk-c-Autocomplete__result" role="option" id="item_3_2" data-myapp-autocomplete-value="sanfran"
-            data-myapp-autocomplete-text="San Francisco, California">
-            San Francisco, California
-          </li>
-          <li class="sprk-c-Autocomplete__result" role="option" id="item_3_3" data-myapp-autocomplete-value="chicago"
-            data-myapp-autocomplete-text="Chicago, Illinois">
-            Chicago, Illinois
-          </li>
-          <li class="sprk-c-Autocomplete__result" data-myapp-autocomplete-no-results-found>
-            <div class="sprk-o-Flag">
-              <div class="sprk-o-Flag__figure">
-                <svg class="sprk-c-Icon sprk-c-Icon--l sprk-c-Icon--filled sprk-c-Icon--filled-current-color"
-                  viewBox="0 0 100 100">
-                  <use xlink:href="#exclamation-filled" />
-                </svg>
-              </div>
-              <div class="sprk-o-Flag__body">
-                <div class="sprk-b-TypeBodyOne">No Matches Found</div>
-                <div>Please check your spelling and try again.</div>
-              </div>
-            </div>
-          </li>
-        </ul>
-        <div class="sprk-b-ErrorContainer" id="input--error-container3"></div>
+          autocomplete="off" autocapitalize="off" spellcheck="false">
       </div>
+
+      <ul class="sprk-c-Autocomplete__results sprk-u-Display--none" role="listbox"
+        aria-labelledby="autocomplete-label3">
+        <li class="sprk-c-Autocomplete__result" data-sprk-autocomplete-no-select data-sprk-myapp-autocomplete-pinned>
+          <div class="sprk-o-Flag">
+            <div class="sprk-o-Flag__figure">
+              <svg class="sprk-c-Icon sprk-c-Icon--l sprk-c-Icon--filled sprk-c-Icon--filled-current-color"
+                viewBox="0 0 34 34">
+                <use xlink:href="#townhouse" />
+              </svg>
+            </div>
+            <div class="sprk-o-Flag__body">
+              <a class="sprk-b-Link sprk-b-Link--simple" href="javascript:alert('link to somewhere');">
+                <div>Homes in <span data-myapp-filter-text class="highlighted"></span></div>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="sprk-c-Autocomplete__result" data-sprk-autocomplete-no-select data-sprk-myapp-autocomplete-pinned>
+          <div class="sprk-o-Flag">
+            <div class="sprk-o-Flag__figure">
+              <svg class="sprk-c-Icon sprk-c-Icon--l sprk-c-Icon--filled sprk-c-Icon--filled-current-color"
+                viewBox="0 0 34 34">
+                <use xlink:href="#rates" />
+              </svg>
+            </div>
+            <div class="sprk-o-Flag__body">
+              <a class="sprk-b-Link sprk-b-Link--simple" href="javascript:alert('link to somewhere');">
+                <div>Trends in <span data-myapp-filter-text class="highlighted"></span></div>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="sprk-c-Autocomplete__result" role="option" id="item_3_1" data-myapp-autocomplete-value="detroit"
+          data-myapp-autocomplete-text="Detroit, Michigan">
+          Detroit, Michigan
+        </li>
+        <li class="sprk-c-Autocomplete__result" role="option" id="item_3_2" data-myapp-autocomplete-value="sanfran"
+          data-myapp-autocomplete-text="San Francisco, California">
+          San Francisco, California
+        </li>
+        <li class="sprk-c-Autocomplete__result" role="option" id="item_3_3" data-myapp-autocomplete-value="chicago"
+          data-myapp-autocomplete-text="Chicago, Illinois">
+          Chicago, Illinois
+        </li>
+        <li class="sprk-c-Autocomplete__result" data-myapp-autocomplete-no-results-found>
+          <div class="sprk-o-Flag">
+            <div class="sprk-o-Flag__figure">
+              <svg class="sprk-c-Icon sprk-c-Icon--l sprk-c-Icon--filled sprk-c-Icon--filled-current-color"
+                viewBox="0 0 100 100">
+                <use xlink:href="#exclamation-filled" />
+              </svg>
+            </div>
+            <div class="sprk-o-Flag__body">
+              <div class="sprk-b-TypeBodyOne">No Matches Found</div>
+              <div>Please check your spelling and try again.</div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="sprk-b-ErrorContainer" id="input--error-container3"></div>
     </div>
 
     <h2 class="sprk-b-TypeDisplayFive sprk-u-mbl">Asynchronous Search</h2>
 
-    <div data-sprk-autocomplete="container" data-myapp-autocomplete-dynamic>
+    <div class="sprk-b-InputContainer" data-sprk-autocomplete="container" data-myapp-autocomplete-dynamic>
       <div id="autocomplete_announcer3" aria-live="polite" class="sprk-u-ScreenReaderText"></div>
-
-      <div class="sprk-b-InputContainer">
-        <label for="autocomplete-input6" id="autocomplete-label6" class="sprk-b-Label">
-          Enter Your Address
-        </label>
-        <div class="sprk-b-TextInputIconContainer" role="combobox" aria-haspopup="listbox" aria-expanded="false"
-          aria-labelledby="autocomplete-label6">
-          <svg class="sprk-c-Icon sprk-c-Icon--filled-current-color sprk-c-Icon--stroke-current-color"
-            viewBox="0 0 64 64" aria-hidden="true">
-            <use xlink:href="#search" />
-          </svg>
-          <input class="
+      <label for="autocomplete-input6" id="autocomplete-label6" class="sprk-b-Label">
+        Enter Your Address
+      </label>
+      <div class="sprk-b-TextInputIconContainer" role="combobox" aria-haspopup="listbox" aria-expanded="false"
+        aria-labelledby="autocomplete-label6">
+        <svg class="sprk-c-Icon sprk-c-Icon--filled-current-color sprk-c-Icon--stroke-current-color" viewBox="0 0 64 64"
+          aria-hidden="true">
+          <use xlink:href="#search" />
+        </svg>
+        <input class="
               sprk-b-TextInput
               sprk-b-TextInput--has-svg-icon
               sprk-u-Width-100
             " id="autocomplete-input6" type="text" aria-autocomplete="list" aria-describedby="input--error-container"
-            autocomplete="off" autocapitalize="off" spellcheck="false">
-        </div>
-
-        <ul class="sprk-c-Autocomplete__results sprk-u-Display--none" role="listbox"
-          aria-labelledby="autocomplete-label6">
-          <li class="sprk-c-Autocomplete__result" data-sprk-autocomplete-no-select data-myapp-autocomplete-loading
-            class=" sprk-u-Display--none">
-            <div class="sprk-u-AbsoluteCenter">
-              <div
-                class="sprk-c-Spinner sprk-c-Spinner--circle sprk-c-Spinner--large sprk-c-Spinner--dark sprk-c-Spinner--secondary"
-                aria-valuetext="Searching for addresses. Please wait." role="progressbar"></div>
-            </div>
-          </li>
-        </ul>
+          autocomplete="off" autocapitalize="off" spellcheck="false">
       </div>
+
+      <ul class="sprk-c-Autocomplete__results sprk-u-Display--none" role="listbox"
+        aria-labelledby="autocomplete-label6">
+        <li class="sprk-c-Autocomplete__result" data-sprk-autocomplete-no-select data-myapp-autocomplete-loading
+          class=" sprk-u-Display--none">
+          <div class="sprk-u-AbsoluteCenter">
+            <div
+              class="sprk-c-Spinner sprk-c-Spinner--circle sprk-c-Spinner--large sprk-c-Spinner--dark sprk-c-Spinner--secondary"
+              aria-valuetext="Searching for addresses. Please wait." role="progressbar"></div>
+          </div>
+        </li>
+      </ul>
     </div>
 
     <h2 class="sprk-b-TypeDisplayFive sprk-u-mbl">Huge</h2>
 
-    <div data-sprk-autocomplete="container">
+    <div class="sprk-b-InputContainer sprk-b-InputContainer--huge" data-sprk-autocomplete="container">
       <div aria-live="polite" class="sprk-u-ScreenReaderText"></div>
-
-      <div class="sprk-b-InputContainer sprk-b-InputContainer--huge">
-        <div class="sprk-b-TextInputIconContainer" role="combobox" aria-haspopup="listbox" aria-expanded="false"
-          aria-labelledby="input-label-huge">
-          <svg class="
+      <div class="sprk-b-TextInputIconContainer" role="combobox" aria-haspopup="listbox" aria-expanded="false"
+        aria-labelledby="input-label-huge">
+        <svg class="
               sprk-c-Icon
               sprk-c-Icon--filled-current-color
               sprk-c-Icon--stroke-current-color
             " viewBox="0 0 64 64" aria-hidden="true">
-            <use xlink:href="#search" />
-          </svg>
-          <input class="sprk-b-TextInput sprk-u-Width-100" id="text-input-huge" type="text"
-            placeholder="Search for a Fruit" aria-autocomplete="list"
-            aria-describedby="text-input-huge--error-container" autocomplete="off" autocapitalize="off"
-            spellcheck="false" data-sprk-input="huge">
-          <label for="text-input-huge" id="input-label-huge" class="sprk-b-Label">
-            Search for a Fruit
-          </label>
-        </div>
-
-        <ul class="sprk-c-Autocomplete__results sprk-u-Display--none" role="listbox" aria-labelledby="input-label-huge">
-          <li class="sprk-c-Autocomplete__result" role="option" id="item_6_1" data-myapp-autocomplete-value="apple"
-            data-myapp-autocomplete-text="Apple">
-            Apple
-          </li>
-          <li class="sprk-c-Autocomplete__result" role="option" id="item_6_2" data-myapp-autocomplete-value="Apricot"
-            data-myapp-autocomplete-text="Apricot">Apricot</li>
-          <li class="sprk-c-Autocomplete__result" role="option" id="item_6_3" data-myapp-autocomplete-value="Avocado"
-            data-myapp-autocomplete-text="Avocado">Avocado</li>
-          <li class="sprk-c-Autocomplete__result" role="option" id="item_6_4" data-myapp-autocomplete-value="banana"
-            data-myapp-autocomplete-text="Banana">
-            Banana
-          </li>
-          <li class="sprk-c-Autocomplete__result" role="option" id="item_6_5" data-myapp-autocomplete-value="Blackberry"
-            data-myapp-autocomplete-text="Blackberry">Blackberry</li>
-          <li class="sprk-c-Autocomplete__result" role="option" id="item_6_6" data-myapp-autocomplete-value="Blueberry"
-            data-myapp-autocomplete-text="Blueberry">Blueberry</li>
-          <li class="sprk-c-Autocomplete__result" role="option" id="item_6_7" data-myapp-autocomplete-value="Clementine"
-            data-myapp-autocomplete-text="Clementine">Clementine</li>
-          <li class="sprk-c-Autocomplete__result" role="option" id="item_6_8" data-myapp-autocomplete-value="cucumber"
-            data-myapp-autocomplete-text="Cucumber">
-            Cucumber
-          </li>
-          <li class="sprk-c-Autocomplete__result" role="option" id="item_6_9" data-myapp-autocomplete-value="Fig"
-            data-myapp-autocomplete-text="Fig">Fig</li>
-          <li class="sprk-c-Autocomplete__result" role="option" id="item_6_10" data-myapp-autocomplete-value="Grape"
-            data-myapp-autocomplete-text="Grape">Grape</li>
-          <li class="sprk-c-Autocomplete__result" role="option" id="item_6_11" data-myapp-autocomplete-value="Kumquat"
-            data-myapp-autocomplete-text="Kumquat">Kumquat</li>
-          <li class="sprk-c-Autocomplete__result" role="option" id="item_6_12" data-myapp-autocomplete-value="lemon"
-            data-myapp-autocomplete-text="Lemon">
-            Lemon
-          </li>
-          <li class="sprk-c-Autocomplete__result" role="option" id="item_6_13" data-myapp-autocomplete-value="Papaya"
-            data-myapp-autocomplete-text="Papaya">Papaya</li>
-          <li class="sprk-c-Autocomplete__result" data-myapp-autocomplete-no-results-found>
-            <div class="sprk-o-Flag">
-              <div class="sprk-o-Flag__figure">
-                <svg class="sprk-c-Icon sprk-c-Icon--l sprk-c-Icon--filled sprk-c-Icon--filled-current-color"
-                  aria-hidden="true" viewBox="0 0 100 100">
-                  <use xlink:href="#exclamation-filled" />
-                </svg>
-              </div>
-              <div class="sprk-o-Flag__body">
-                <div class="sprk-b-TypeBodyOne">No Matches Found</div>
-                <div>Please check your spelling and try again.</div>
-              </div>
-            </div>
-          </li>
-        </ul>
-
-        <div class="sprk-b-ErrorContainer" id="text-input-huge--error-container"></div>
+          <use xlink:href="#search" />
+        </svg>
+        <input class="sprk-b-TextInput sprk-u-Width-100" id="text-input-huge" type="text"
+          placeholder="Search for a Fruit" aria-autocomplete="list" aria-describedby="text-input-huge--error-container"
+          autocomplete="off" autocapitalize="off" spellcheck="false" data-sprk-input="huge">
+        <label for="text-input-huge" id="input-label-huge" class="sprk-b-Label">
+          Search for a Fruit
+        </label>
       </div>
+
+      <ul class="sprk-c-Autocomplete__results sprk-u-Display--none" role="listbox" aria-labelledby="input-label-huge">
+        <li class="sprk-c-Autocomplete__result" role="option" id="item_6_1" data-myapp-autocomplete-value="apple"
+          data-myapp-autocomplete-text="Apple">
+          Apple
+        </li>
+        <li class="sprk-c-Autocomplete__result" role="option" id="item_6_2" data-myapp-autocomplete-value="Apricot"
+          data-myapp-autocomplete-text="Apricot">Apricot</li>
+        <li class="sprk-c-Autocomplete__result" role="option" id="item_6_3" data-myapp-autocomplete-value="Avocado"
+          data-myapp-autocomplete-text="Avocado">Avocado</li>
+        <li class="sprk-c-Autocomplete__result" role="option" id="item_6_4" data-myapp-autocomplete-value="banana"
+          data-myapp-autocomplete-text="Banana">
+          Banana
+        </li>
+        <li class="sprk-c-Autocomplete__result" role="option" id="item_6_5" data-myapp-autocomplete-value="Blackberry"
+          data-myapp-autocomplete-text="Blackberry">Blackberry</li>
+        <li class="sprk-c-Autocomplete__result" role="option" id="item_6_6" data-myapp-autocomplete-value="Blueberry"
+          data-myapp-autocomplete-text="Blueberry">Blueberry</li>
+        <li class="sprk-c-Autocomplete__result" role="option" id="item_6_7" data-myapp-autocomplete-value="Clementine"
+          data-myapp-autocomplete-text="Clementine">Clementine</li>
+        <li class="sprk-c-Autocomplete__result" role="option" id="item_6_8" data-myapp-autocomplete-value="cucumber"
+          data-myapp-autocomplete-text="Cucumber">
+          Cucumber
+        </li>
+        <li class="sprk-c-Autocomplete__result" role="option" id="item_6_9" data-myapp-autocomplete-value="Fig"
+          data-myapp-autocomplete-text="Fig">Fig</li>
+        <li class="sprk-c-Autocomplete__result" role="option" id="item_6_10" data-myapp-autocomplete-value="Grape"
+          data-myapp-autocomplete-text="Grape">Grape</li>
+        <li class="sprk-c-Autocomplete__result" role="option" id="item_6_11" data-myapp-autocomplete-value="Kumquat"
+          data-myapp-autocomplete-text="Kumquat">Kumquat</li>
+        <li class="sprk-c-Autocomplete__result" role="option" id="item_6_12" data-myapp-autocomplete-value="lemon"
+          data-myapp-autocomplete-text="Lemon">
+          Lemon
+        </li>
+        <li class="sprk-c-Autocomplete__result" role="option" id="item_6_13" data-myapp-autocomplete-value="Papaya"
+          data-myapp-autocomplete-text="Papaya">Papaya</li>
+        <li class="sprk-c-Autocomplete__result" data-myapp-autocomplete-no-results-found>
+          <div class="sprk-o-Flag">
+            <div class="sprk-o-Flag__figure">
+              <svg class="sprk-c-Icon sprk-c-Icon--l sprk-c-Icon--filled sprk-c-Icon--filled-current-color"
+                aria-hidden="true" viewBox="0 0 100 100">
+                <use xlink:href="#exclamation-filled" />
+              </svg>
+            </div>
+            <div class="sprk-o-Flag__body">
+              <div class="sprk-b-TypeBodyOne">No Matches Found</div>
+              <div>Please check your spelling and try again.</div>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="sprk-b-ErrorContainer" id="text-input-huge--error-container"></div>
     </div>
   </main>
   <script src="bundle.js"></script>
