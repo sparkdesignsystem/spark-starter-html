@@ -1,0 +1,12 @@
+.filtered-out {
+  display: none;
+}
+
+.highlighted {
+  font-weight: 700;
+  color: $sprk-black;
+}
+
+li[data-myapp-autocomplete-no-results-found] svg {
+  color: $sprk-pink;
+}
