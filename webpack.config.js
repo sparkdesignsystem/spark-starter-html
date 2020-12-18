@@ -15,10 +15,10 @@ const loadIcons = (cb) => {
         'https://www.rockomni.com/mcds/assets/GlobalContent/NonStockImages/Icons/spark-icons-v14.svg',
       rejectUnauthorized: false,
     })
-    .pipe(fileStream)
     .on('error', (error) => {
-      console.log(error);
+      console.error(error);
     })
+    .pipe(fileStream)
     .on('finish', cb);
 };
 
