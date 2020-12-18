@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
-    "develop": "webpack-dev-server"
+    "build": "node src/js/loadIcons.js && webpack",
+    "develop": "node src/js/loadIcons.js && webpack-dev-server"
   },
   "lint-staged": {
     "*.scss": [
