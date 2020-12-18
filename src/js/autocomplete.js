@@ -27,8 +27,8 @@ const getFirstAncestorOfType = (childNode, ancestorNodeType) => {
 
 const setupAutocomplete = (container) => {
 
-  const input = container.querySelector('input');
-  const list = container.querySelector('ul');
+  const input = container.querySelector('[data-sprk-autocomplete="input"]');
+  const list = container.querySelector('[data-sprk-autocomplete="results"]');
   const liveAnnouncer = container.querySelector('[aria-live]');
 
   const isListOpen = (list) => {
@@ -62,7 +62,7 @@ const setupAutocomplete = (container) => {
 
   const hideList = (list, input) => {
     if (isListOpen(list)) {
-      resetResults(list.querySelectorAll('li'));
+      resetResults(list.querySelectorAll('[data-sprk-autocomplete="result"]'));
       list.classList.add('sprk-u-Display--none');
       input.removeAttribute('aria-activedescendant');
       input.parentNode.setAttribute('aria-expanded', false);
@@ -76,7 +76,7 @@ const setupAutocomplete = (container) => {
 
   const filterList = (list, filterString, liveAnnouncer) => {
     const listItems =
-      list.querySelectorAll('li:not([' + noneFoundAttribute + '])');
+      list.querySelectorAll('[data-sprk-autocomplete="result"]:not([' + noneFoundAttribute + '])');
     resetResults(listItems);
     const matchingResults = [];
 
@@ -158,7 +158,7 @@ const setupAutocomplete = (container) => {
 
     input.setAttribute('data-myapp-autocomplete-value', inputValue);
     input.value = textValue;
-    resetResults(list.querySelectorAll('li'));
+    resetResults(list.querySelectorAll('[data-sprk-autocomplete="result"]'));
     hideList(list, input);
 
     // handle the demo case for showing error state
