@@ -27,7 +27,7 @@ loadIcons(() => {
 });
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   entry: {
     js: './src/js/main.js',
   },
@@ -51,9 +51,7 @@ module.exports = {
     new HandlebarsPlugin({
       entry: path.join(process.cwd(), 'src/pages', '*.html'),
       output: path.join(process.cwd(), 'dist', '[name].html'),
-      partials: [
-        path.join(process.cwd(), 'src', 'pages', 'partials', '*.hbs'),
-      ],
+      partials: [path.join(process.cwd(), 'src', 'pages', 'partials', '*.hbs')],
       helpers,
     }),
   ],
