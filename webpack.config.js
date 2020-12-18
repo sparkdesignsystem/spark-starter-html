@@ -1,30 +1,7 @@
 const path = require('path');
 const HandlebarsPlugin = require('handlebars-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const fs = require('fs');
-const request = require('request');
 const helpers = require('handlebars-helpers')();
-
-const loadIcons = (cb) => {
-  const fileStream = fs.createWriteStream(
-    './src/pages/partials/sparkIcons.hbs',
-  );
-  request
-    .get({
-      uri:
-        'https://www.rockomni.com/mcds/assets/GlobalContent/NonStockImages/Icons/spark-icons-v14.svg',
-      rejectUnauthorized: false,
-    })
-    .pipe(fileStream)
-    .on('error', (error) => {
-      console.log(error);
-    })
-    .on('finish', cb);
-};
-
-loadIcons(() => {
-  console.log('done fetching icons');
-});
 
 module.exports = {
   mode: 'development',
@@ -51,9 +28,7 @@ module.exports = {
     new HandlebarsPlugin({
       entry: path.join(process.cwd(), 'src/pages', '*.html'),
       output: path.join(process.cwd(), 'dist', '[name].html'),
-      partials: [
-        path.join(process.cwd(), 'src', 'pages', 'partials', '*.hbs'),
-      ],
+      partials: [path.join(process.cwd(), 'src', 'pages', 'partials', '*.hbs')],
       helpers,
     }),
   ],
