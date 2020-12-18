@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const helpers = require('handlebars-helpers')();
 
 module.exports = {
-  mode: 'production',
+  mode: 'development',
   entry: {
     js: './src/js/main.js',
   },
