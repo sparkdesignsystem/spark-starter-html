@@ -8,19 +8,37 @@ module.exports = {
   entry: {
     js: './src/js/main.js',
   },
-  output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js',
-  },
   module: {
     rules: [
       {
         test: /\.s[ac]ss$/i,
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
       },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [
+              [
+                '@babel/preset-env',
+                {
+                  targets: {
+                    ie: '11',
+                  },
+                },
+              ],
+            ],
+          },
+        },
+      },
     ],
   },
-
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js',
+  },
   plugins: [
     new MiniCssExtractPlugin({
       filename: 'bundle.css',
