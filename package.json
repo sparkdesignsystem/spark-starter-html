@@ -28,7 +28,7 @@
   "author": "Spark Dev Team <sparkdesignsystem@quickenloans.com>",
   "license": "MIT",
   "devDependencies": {
-    "@sparkdesignsystem/spark": "^15.0.0",
+    "@sparkdesignsystem/spark": "^15.1.0",
     "css-loader": "^3.6.0",
     "eslint": "^7.13.0",
     "eslint-config-airbnb-base": "^14.2.1",
