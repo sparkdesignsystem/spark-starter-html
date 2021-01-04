@@ -2,7 +2,6 @@ const fs = require('fs');
 const request = require('request');
 
 const loadIcons = (cb) => {
-  request.debug = true;
   const fileStream = fs.createWriteStream(
     './src/pages/partials/sparkIcons.hbs',
   );
