@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "develop": "webpack-dev-server"
   },
   "author": "Spark",
   "license": "ISC",
@@ -15,6 +15,7 @@
     "node-sass": "^4.14.1",
     "sass-loader": "^8.0.0",
     "webpack": "^4.41.3",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.11.1"
   }
 }
