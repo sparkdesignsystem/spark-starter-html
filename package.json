@@ -30,7 +30,7 @@
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
-    "@sparkdesignsystem/spark": "^15.1.1",
+    "@sparkdesignsystem/spark": "^16.0.0",
     "babel-loader": "^8.2.2",
     "css-loader": "^3.6.0",
     "eslint": "^7.13.0",
