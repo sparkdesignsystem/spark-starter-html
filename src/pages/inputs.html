@@ -726,7 +726,143 @@
 
       <div class="sprk-b-ErrorContainer" id="percentage--error-container3"></div>
     </div>
+    <div class="sprk-b-InputContainer">
+      <label
+        for="search-input"
+        class="sprk-b-Label sprk-u-ScreenReaderText"
+      >
+        Search
+      </label>
 
+      <div class="sprk-b-TextInputIconContainer">
+        <svg
+          class="
+            sprk-c-Icon
+            sprk-c-Icon--filled-current-color
+            sprk-c-Icon--stroke-current-color
+          "
+          viewBox="0 0 64 64"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <use xlink:href="#search" />
+        </svg>
+
+        <input
+          class="
+            sprk-b-TextInput
+            sprk-b-TextInput--has-svg-icon
+          "
+          id="search-input"
+          data-id="search-input"
+          type="search"
+          placeholder="Search"
+          aria-describedby="search--error-container"
+        >
+      </div>
+
+      <div
+        class="sprk-b-ErrorContainer"
+        id="search--error-container"
+      ></div>
+    </div>
+    <div class="sprk-b-InputContainer">
+      <label
+        for="search-input"
+        class="sprk-b-Label sprk-u-ScreenReaderText"
+      >
+        Search
+      </label>
+      <div class="sprk-b-TextInputIconContainer">
+        <svg
+          class="
+            sprk-c-Icon
+            sprk-c-Icon--filled-current-color
+            sprk-c-Icon--stroke-current-color
+          "
+          viewBox="0 0 64 64"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <use xlink:href="#search" />
+        </svg>
+
+        <input
+          class="
+            sprk-b-TextInput
+            sprk-b-TextArea--error
+            sprk-b-TextInput--has-svg-icon
+          "
+          id="search-input"
+          data-id="search-input"
+          type="search"
+          placeholder="Search"
+          aria-invalid="true"
+          aria-describedby="search--error-container"
+        >
+      </div>
+
+      <div
+        class="sprk-b-ErrorContainer"
+        id="search--error-container"
+      >
+        <svg
+          class="sprk-c-Icon sprk-b-ErrorIcon"
+          viewBox="0 0 64 64"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <use xlink:href="#exclamation-filled" />
+        </svg>
+        <div class="sprk-b-ErrorText">
+          There is an error on this field.
+        </div>
+      </div>
+    </div>
+    <div class="sprk-b-InputContainer">
+      <label
+        for="search-input"
+        class="
+          sprk-b-Label
+          sprk-b-Label--disabled
+          sprk-u-ScreenReaderText"
+      >
+        Search
+      </label>
+
+      <div class="sprk-b-TextInputIconContainer">
+        <svg
+          class="
+            sprk-c-Icon
+            sprk-c-Icon--filled-current-color
+            sprk-c-Icon--stroke-current-color
+          "
+          viewBox="0 0 64 64"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <use xlink:href="#search" />
+        </svg>
+
+        <input
+          class="
+            sprk-b-TextInput
+            sprk-b-TextInput--has-svg-icon
+          "
+          id="search-input"
+          data-id="search-input"
+          type="search"
+          placeholder="Search"
+          aria-describedby="search--error-container"
+          disabled
+        >
+      </div>
+
+      <div
+        class="sprk-b-ErrorContainer"
+        id="search--error-container"
+      ></div>
+    </div>
     <div class="sprk-b-InputContainer" data-sprk-input="phone">
       <label for="phone-input" class="sprk-b-Label">
         Phone Number
@@ -917,334 +1053,258 @@
           </label>
         </div>
       </fieldset>
-
       <div class="sprk-b-ErrorContainer" id="radio--error-container3"></div>
+    </div>
+    <div class="sprk-b-InputContainer">
+      <label for="select" class="sprk-b-Label">
+        Select Box Label
+      </label>
 
-      <div class="sprk-b-InputContainer">
-        <div class="sprk-b-TextInputIconContainer">
-          <svg class="sprk-c-Icon sprk-c-Icon--filled-current-color sprk-c-Icon--stroke-current-color"
-            viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-            <use xlink:href="#search" />
-          </svg>
+      <select class="sprk-b-Select" id="select" data-id="select" aria-describedby="select--error-container">
+        <option value="not-selected">Make a selection...</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+        <optgroup label="Grouped Options">
+          <option value="g1">Grouped Option 1</option>
+          <option value="g2">Grouped Option 2</option>
+          <option value="g3">Grouped Option 3</option>
+        </optgroup>
+      </select>
 
-          <input class="
-            sprk-b-TextInput
-            sprk-b-TextInput--has-svg-icon
-            sprk-u-Width-100
-          " id="search-input" data-id="search-input" type="search" placeholder="Search"
-            aria-describedby="search--error-container">
-          <label for="search-input" class="sprk-b-Label">
-            Search
-          </label>
-        </div>
-        <div class="sprk-b-ErrorContainer" id="search--error-container"></div>
-      </div>
+      <svg class="
+        sprk-c-Icon
+        sprk-c-Icon--filled-current-color
+        sprk-c-Icon--stroke-current-color
+        sprk-b-SelectContainer__icon
+      " viewBox="0 0 64 64">
+        <use xlink:href="#chevron-down" />
+      </svg>
 
-      <div class="sprk-b-InputContainer">
-        <div class="sprk-b-TextInputIconContainer">
-          <svg class="sprk-c-Icon sprk-c-Icon--filled-current-color sprk-c-Icon--stroke-current-color"
-            viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-            <use xlink:href="#search" />
-          </svg>
+      <div class="sprk-b-ErrorContainer" id="select--error-container"></div>
+    </div>
 
-          <input class="
-            sprk-b-TextInput
-            sprk-b-TextArea--error
-            sprk-b-TextInput--has-svg-icon
-            sprk-u-Width-100
-          " id="search-input" data-id="search-input" type="search" placeholder="Search" aria-invalid="true"
-            aria-describedby="search--error-container">
-          <label for="search-input" class="sprk-b-Label">
-            Search
-          </label>
-        </div>
+    <div class="sprk-b-InputContainer">
+      <label for="select" class="sprk-b-Label">
+        Select Box Label
+      </label>
 
-        <div class="sprk-b-ErrorContainer" id="search--error-container">
-          <svg class="sprk-c-Icon sprk-b-ErrorIcon" aria-hidden="true" focusable="false" viewBox="0 0 64 64">
-            <use xlink:href="#exclamation-filled" />
-          </svg>
-          <div class="sprk-b-ErrorText">
-            There is an error on this field.
-          </div>
-        </div>
-      </div>
+      <select class="sprk-b-Select sprk-b-Select--error" id="select" data-id="select" aria-invalid="true"
+        aria-describedby="select--error-container">
+        <option value="not-selected">Make a selection...</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+        <optgroup label="Grouped Options">
+          <option value="g1">Grouped Option 1</option>
+          <option value="g2">Grouped Option 2</option>
+          <option value="g3">Grouped Option 3</option>
+        </optgroup>
+      </select>
 
-      <div class="sprk-b-InputContainer">
-        <label for="search-input" class="
-          sprk-b-Label
-          sprk-b-Label--disabled
-          sprk-b-Label--with-icon
-          sprk-u-ScreenReaderText">
-          Search
-        </label>
+      <svg class="
+        sprk-c-Icon
+        sprk-c-Icon--filled-current-color
+        sprk-c-Icon--stroke-current-color
+        sprk-b-SelectContainer__icon
+      " viewBox="0 0 64 64">
+        <use xlink:href="#chevron-down" />
+      </svg>
 
-        <div class="sprk-b-TextInputIconContainer">
-          <svg class="sprk-c-Icon sprk-c-Icon--filled-current-color sprk-c-Icon--stroke-current-color"
-            viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-            <use xlink:href="#search" />
-          </svg>
-
-          <input class="
-            sprk-b-TextInput
-            sprk-b-TextInput--has-svg-icon
-            sprk-u-Width-100
-          " id="search-input" data-id="search-input" type="search" placeholder="Search"
-            aria-describedby="search--error-container" disabled>
-        </div>
-
-        <div class="sprk-b-ErrorContainer" id="search--error-container"></div>
-      </div>
-
-      <div class="sprk-b-InputContainer">
-        <label for="select" class="sprk-b-Label">
-          Select Box Label
-        </label>
-
-        <select class="sprk-b-Select" id="select" data-id="select" aria-describedby="select--error-container">
-          <option value="not-selected">Make a selection...</option>
-          <option value="1">Option 1</option>
-          <option value="2">Option 2</option>
-          <option value="3">Option 3</option>
-          <optgroup label="Grouped Options">
-            <option value="g1">Grouped Option 1</option>
-            <option value="g2">Grouped Option 2</option>
-            <option value="g3">Grouped Option 3</option>
-          </optgroup>
-        </select>
-
-        <svg class="
-          sprk-c-Icon
-          sprk-c-Icon--filled-current-color
-          sprk-c-Icon--stroke-current-color
-          sprk-b-SelectContainer__icon
-        " viewBox="0 0 64 64">
-          <use xlink:href="#chevron-down" />
+      <div class="sprk-b-ErrorContainer" id="select--error-container">
+        <svg class="sprk-c-Icon sprk-b-ErrorIcon" aria-hidden="true" focusable="false" viewBox="0 0 64 64">
+          <use xlink:href="#exclamation-filled" />
         </svg>
+        <div class="sprk-b-ErrorText">
+          There is an error on this field.
+        </div>
+      </div>
+    </div>
 
-        <div class="sprk-b-ErrorContainer" id="select--error-container"></div>
+    <div class="sprk-b-InputContainer">
+      <label for="select" class="sprk-b-Label sprk-b-Label--disabled">
+        Select Box Label
+      </label>
+
+      <select class="sprk-b-Select" id="select" data-id="select" aria-describedby="select--error-container" disabled>
+        <option value="not-selected">Make a selection...</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+        <optgroup label="Grouped Options">
+          <option value="g1">Grouped Option 1</option>
+          <option value="g2">Grouped Option 2</option>
+          <option value="g3">Grouped Option 3</option>
+        </optgroup>
+      </select>
+
+      <svg class="
+        sprk-c-Icon
+        sprk-c-Icon--filled-current-color
+        sprk-c-Icon--stroke-current-color
+        sprk-b-SelectContainer__icon
+      " viewBox="0 0 64 64">
+        <use xlink:href="#chevron-down" />
+      </svg>
+
+      <div class="sprk-b-ErrorContainer" id="select--error-container"></div>
+    </div>
+
+    <div class="sprk-b-InputContainer">
+      <label for="ssn-1" class="sprk-b-Label">
+        Social Security #
+      </label>
+
+      <input class="sprk-b-TextInput" id="ssn-1" data-id="ssn" type="password"
+        placeholder="000-00-0000" aria-describedby="ssn--error-container">
+
+      <div class="
+        sprk-b-SelectionContainer
+        sprk-b-Checkbox
+        sprk-b-InputContainer__visibility-toggle
+      ">
+        <input class="sprk-b-Checkbox__input" id="ssn-show-ssn-1" type="checkbox" data-id="ssn-show-ssn">
+
+        <label for="ssn-show-ssn-1" class="sprk-b-Label sprk-b-Label--inline sprk-b-Checkbox__label">
+          Show SSN
+        </label>
       </div>
 
-      <div class="sprk-b-InputContainer">
-        <label for="select" class="sprk-b-Label">
-          Select Box Label
+      <div class="sprk-b-ErrorContainer" id="ssn--error-container"></div>
+    </div>
+
+    <div class="sprk-b-InputContainer">
+      <label for="ssn-2" class="sprk-b-Label">
+        Social Security #
+      </label>
+
+      <input class="sprk-b-TextInput sprk-b-TextInput--error sprk-u-Width-100" id="ssn-2" data-id="ssn"
+        type="password" placeholder="000-00-0000" aria-invalid="true" aria-describedby="ssn--error-container">
+
+      <div class="
+        sprk-b-SelectionContainer
+        sprk-b-Checkbox
+        sprk-b-InputContainer__visibility-toggle
+      ">
+        <input class="sprk-b-Checkbox__input" id="ssn-show-ssn-2" type="checkbox" data-id="ssn-show-ssn">
+
+        <label for="ssn-show-ssn-2" class="sprk-b-Label sprk-b-Label--inline sprk-b-Checkbox__label">
+          Show SSN
         </label>
-
-        <select class="sprk-b-Select sprk-b-Select--error" id="select" data-id="select" aria-invalid="true"
-          aria-describedby="select--error-container">
-          <option value="not-selected">Make a selection...</option>
-          <option value="1">Option 1</option>
-          <option value="2">Option 2</option>
-          <option value="3">Option 3</option>
-          <optgroup label="Grouped Options">
-            <option value="g1">Grouped Option 1</option>
-            <option value="g2">Grouped Option 2</option>
-            <option value="g3">Grouped Option 3</option>
-          </optgroup>
-        </select>
-
-        <svg class="
-          sprk-c-Icon
-          sprk-c-Icon--filled-current-color
-          sprk-c-Icon--stroke-current-color
-          sprk-b-SelectContainer__icon
-        " viewBox="0 0 64 64">
-          <use xlink:href="#chevron-down" />
+      </div>
+      <div class="sprk-b-ErrorContainer" id="ssn--error-container">
+        <svg class="sprk-c-Icon sprk-b-ErrorIcon" aria-hidden="true" focusable="false" viewBox="0 0 64 64">
+          <use xlink:href="#exclamation-filled" />
         </svg>
-
-        <div class="sprk-b-ErrorContainer" id="select--error-container">
-          <svg class="sprk-c-Icon sprk-b-ErrorIcon" aria-hidden="true" focusable="false" viewBox="0 0 64 64">
-            <use xlink:href="#exclamation-filled" />
-          </svg>
-          <div class="sprk-b-ErrorText">
-            There is an error on this field.
-          </div>
+        <div class="sprk-b-ErrorText">
+          There is an error on this field.
         </div>
       </div>
+    </div>
 
-      <div class="sprk-b-InputContainer">
-        <label for="select" class="sprk-b-Label sprk-b-Label--disabled">
-          Select Box Label
+    <div class="sprk-b-InputContainer">
+      <label for="ssn-3" class="sprk-b-Label sprk-b-Label--disabled">
+        Social Security #
+      </label>
+
+      <input class="sprk-b-TextInput" id="ssn-3" data-id="ssn" type="password"
+        placeholder="000-00-0000" aria-describedby="ssn--error-container" disabled>
+
+      <div class="
+        sprk-b-SelectionContainer
+        sprk-b-Checkbox
+        sprk-b-InputContainer__visibility-toggle
+      ">
+        <input class="sprk-Checkbox__input" id="ssn-show-ssn-3" type="checkbox" data-id="ssn-show-ssn" disabled>
+
+        <label for="ssn-show-ssn-3"
+          class="sprk-b-Label sprk-b-Label--disabled sprk-b-Label--inline sprk-b-Checkbox__label">
+          Show SSN
         </label>
+      </div>
 
-        <select class="sprk-b-Select" id="select" data-id="select" aria-describedby="select--error-container" disabled>
-          <option value="not-selected">Make a selection...</option>
-          <option value="1">Option 1</option>
-          <option value="2">Option 2</option>
-          <option value="3">Option 3</option>
-          <optgroup label="Grouped Options">
-            <option value="g1">Grouped Option 1</option>
-            <option value="g2">Grouped Option 2</option>
-            <option value="g3">Grouped Option 3</option>
-          </optgroup>
-        </select>
+      <div class="sprk-b-ErrorContainer" id="ssn--error-container"></div>
+    </div>
 
-        <svg class="
-          sprk-c-Icon
-          sprk-c-Icon--filled-current-color
-          sprk-c-Icon--stroke-current-color
-          sprk-b-SelectContainer__icon
-        " viewBox="0 0 64 64">
-          <use xlink:href="#chevron-down" />
+    <div class="sprk-b-InputContainer">
+      <label for="text-input" class="sprk-b-Label">
+        Text Input Label
+      </label>
+
+      <input class="sprk-b-TextInput" id="text-input" data-id="text-input" type="text" value=""
+        aria-describedby="text-input--error-container">
+
+      <div class="sprk-b-ErrorContainer" id="text-input--error-container"></div>
+    </div>
+
+    <div class="sprk-b-InputContainer">
+      <label for="text-input2" class="sprk-b-Label">
+        Text Input Label
+      </label>
+
+      <input class="sprk-b-TextInput sprk-b-TextInput--error sprk-u-Width-100" id="text-input2" data-id="text-input2"
+        type="text" value="" aria-invalid="true" aria-describedby="text-input--error-container2">
+
+      <div class="sprk-b-ErrorContainer" id="text-input--error-container2">
+        <svg class="sprk-c-Icon sprk-b-ErrorIcon" aria-hidden="true" focusable="false" viewBox="0 0 64 64">
+          <use xlink:href="#exclamation-filled" />
         </svg>
-
-        <div class="sprk-b-ErrorContainer" id="select--error-container"></div>
-      </div>
-
-      <div class="sprk-b-InputContainer">
-        <label for="ssn-1" class="sprk-b-Label">
-          Social Security #
-        </label>
-
-        <input class="sprk-b-TextInput" id="ssn-1" data-id="ssn" type="password"
-          placeholder="000-00-0000" aria-describedby="ssn--error-container">
-
-        <div class="
-          sprk-b-SelectionContainer
-          sprk-b-Checkbox
-          sprk-b-InputContainer__visibility-toggle
-        ">
-          <input class="sprk-b-Checkbox__input" id="ssn-show-ssn-1" type="checkbox" data-id="ssn-show-ssn">
-
-          <label for="ssn-show-ssn-1" class="sprk-b-Label sprk-b-Label--inline sprk-b-Checkbox__label">
-            Show SSN
-          </label>
-        </div>
-
-        <div class="sprk-b-ErrorContainer" id="ssn--error-container"></div>
-      </div>
-
-      <div class="sprk-b-InputContainer">
-        <label for="ssn-2" class="sprk-b-Label">
-          Social Security #
-        </label>
-
-        <input class="sprk-b-TextInput sprk-b-TextInput--error sprk-u-Width-100" id="ssn-2" data-id="ssn"
-          type="password" placeholder="000-00-0000" aria-invalid="true" aria-describedby="ssn--error-container">
-
-        <div class="
-          sprk-b-SelectionContainer
-          sprk-b-Checkbox
-          sprk-b-InputContainer__visibility-toggle
-        ">
-          <input class="sprk-b-Checkbox__input" id="ssn-show-ssn-2" type="checkbox" data-id="ssn-show-ssn">
-
-          <label for="ssn-show-ssn-2" class="sprk-b-Label sprk-b-Label--inline sprk-b-Checkbox__label">
-            Show SSN
-          </label>
-        </div>
-        <div class="sprk-b-ErrorContainer" id="ssn--error-container">
-          <svg class="sprk-c-Icon sprk-b-ErrorIcon" aria-hidden="true" focusable="false" viewBox="0 0 64 64">
-            <use xlink:href="#exclamation-filled" />
-          </svg>
-          <div class="sprk-b-ErrorText">
-            There is an error on this field.
-          </div>
+        <div class="sprk-b-ErrorText">
+          There is an error on this field.
         </div>
       </div>
+    </div>
 
-      <div class="sprk-b-InputContainer">
-        <label for="ssn-3" class="sprk-b-Label sprk-b-Label--disabled">
-          Social Security #
-        </label>
+    <div class="sprk-b-InputContainer">
+      <label for="text-input5" class="sprk-b-Label sprk-b-Label--disabled">
+        Text Input Label
+      </label>
 
-        <input class="sprk-b-TextInput" id="ssn-3" data-id="ssn" type="password"
-          placeholder="000-00-0000" aria-describedby="ssn--error-container" disabled>
+      <input class="sprk-b-TextInput" id="text-input5" data-id="text-input5" type="text" value=""
+        aria-describedby="text-input--error-container5" disabled>
 
-        <div class="
-          sprk-b-SelectionContainer
-          sprk-b-Checkbox
-          sprk-b-InputContainer__visibility-toggle
-        ">
-          <input class="sprk-Checkbox__input" id="ssn-show-ssn-3" type="checkbox" data-id="ssn-show-ssn" disabled>
+      <div class="sprk-b-ErrorContainer" id="text-input--error-container5"></div>
+    </div>
 
-          <label for="ssn-show-ssn-3"
-            class="sprk-b-Label sprk-b-Label--disabled sprk-b-Label--inline sprk-b-Checkbox__label">
-            Show SSN
-          </label>
-        </div>
+    <div class="sprk-b-InputContainer">
+      <label for="textarea" class="sprk-b-Label">
+        Description
+      </label>
 
-        <div class="sprk-b-ErrorContainer" id="ssn--error-container"></div>
-      </div>
+      <textarea class="sprk-b-TextArea sprk-u-Width-100" id="textarea" data-id="textarea"
+        aria-describedby="textarea--error-container"></textarea>
 
-      <div class="sprk-b-InputContainer">
-        <label for="text-input" class="sprk-b-Label">
-          Text Input Label
-        </label>
+      <div class="sprk-b-ErrorContainer" id="textarea--error-container"></div>
+    </div>
 
-        <input class="sprk-b-TextInput" id="text-input" data-id="text-input" type="text" value=""
-          aria-describedby="text-input--error-container">
+    <div class="sprk-b-InputContainer">
+      <label for="textarea" class="sprk-b-Label">
+        Description
+      </label>
 
-        <div class="sprk-b-ErrorContainer" id="text-input--error-container"></div>
-      </div>
+      <textarea class="sprk-b-TextArea sprk-b-TextArea--error sprk-u-Width-100" id="textarea" data-id="textarea"
+        aria-describedby="textarea--error-container" aria-invalid="true"></textarea>
 
-      <div class="sprk-b-InputContainer">
-        <label for="text-input2" class="sprk-b-Label">
-          Text Input Label
-        </label>
-
-        <input class="sprk-b-TextInput sprk-b-TextInput--error sprk-u-Width-100" id="text-input2" data-id="text-input2"
-          type="text" value="" aria-invalid="true" aria-describedby="text-input--error-container2">
-
-        <div class="sprk-b-ErrorContainer" id="text-input--error-container2">
-          <svg class="sprk-c-Icon sprk-b-ErrorIcon" aria-hidden="true" focusable="false" viewBox="0 0 64 64">
-            <use xlink:href="#exclamation-filled" />
-          </svg>
-          <div class="sprk-b-ErrorText">
-            There is an error on this field.
-          </div>
+      <div class="sprk-b-ErrorContainer" id="textarea--error-container">
+        <svg class="sprk-c-Icon sprk-b-ErrorIcon" aria-hidden="true" focusable="false" viewBox="0 0 64 64">
+          <use xlink:href="#exclamation-filled" />
+        </svg>
+        <div class="sprk-b-ErrorText">
+          There is an error on this field.
         </div>
       </div>
+    </div>
 
-      <div class="sprk-b-InputContainer">
-        <label for="text-input5" class="sprk-b-Label sprk-b-Label--disabled">
-          Text Input Label
-        </label>
+    <div class="sprk-b-InputContainer">
+      <label for="textarea" class="sprk-b-Label sprk-b-Label--disabled">
+        Description
+      </label>
 
-        <input class="sprk-b-TextInput" id="text-input5" data-id="text-input5" type="text" value=""
-          aria-describedby="text-input--error-container5" disabled>
+      <textarea class="sprk-b-TextArea sprk-u-Width-100" id="textarea" data-id="textarea"
+        aria-describedby="textarea--error-container" disabled></textarea>
 
-        <div class="sprk-b-ErrorContainer" id="text-input--error-container5"></div>
-      </div>
-
-      <div class="sprk-b-InputContainer">
-        <label for="textarea" class="sprk-b-Label">
-          Description
-        </label>
-
-        <textarea class="sprk-b-TextArea sprk-u-Width-100" id="textarea" data-id="textarea"
-          aria-describedby="textarea--error-container"></textarea>
-
-        <div class="sprk-b-ErrorContainer" id="textarea--error-container"></div>
-      </div>
-
-      <div class="sprk-b-InputContainer">
-        <label for="textarea" class="sprk-b-Label">
-          Description
-        </label>
-
-        <textarea class="sprk-b-TextArea sprk-b-TextArea--error sprk-u-Width-100" id="textarea" data-id="textarea"
-          aria-describedby="textarea--error-container" aria-invalid="true"></textarea>
-
-        <div class="sprk-b-ErrorContainer" id="textarea--error-container">
-          <svg class="sprk-c-Icon sprk-b-ErrorIcon" aria-hidden="true" focusable="false" viewBox="0 0 64 64">
-            <use xlink:href="#exclamation-filled" />
-          </svg>
-          <div class="sprk-b-ErrorText">
-            There is an error on this field.
-          </div>
-        </div>
-      </div>
-
-      <div class="sprk-b-InputContainer">
-        <label for="textarea" class="sprk-b-Label sprk-b-Label--disabled">
-          Description
-        </label>
-
-        <textarea class="sprk-b-TextArea sprk-u-Width-100" id="textarea" data-id="textarea"
-          aria-describedby="textarea--error-container" disabled></textarea>
-
-        <div class="sprk-b-ErrorContainer" id="textarea--error-container"></div>
-      </div>
+      <div class="sprk-b-ErrorContainer" id="textarea--error-container"></div>
+    </div>
 
 
   </main>
