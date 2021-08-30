@@ -32,7 +32,7 @@ const setupAutocomplete = (container) => {
   const liveAnnouncer = container.querySelector('[aria-live]');
 
   const isListOpen = (list) => {
-    return !list.classList.contains('sprk-u-Display--none');
+    return !list.classList.contains('sprk-c-Autocomplete__results--is-hidden');
   };
 
   const resetResults = (resultList) => {
@@ -63,14 +63,14 @@ const setupAutocomplete = (container) => {
   const hideList = (list, input) => {
     if (isListOpen(list)) {
       resetResults(list.querySelectorAll('[data-sprk-autocomplete="result"]'));
-      list.classList.add('sprk-u-Display--none');
+      list.classList.add('sprk-c-Autocomplete__results--is-hidden');
       input.removeAttribute('aria-activedescendant');
       input.parentNode.setAttribute('aria-expanded', false);
     }
   };
 
   const showList = (list, input) => {
-    list.classList.remove('sprk-u-Display--none');
+    list.classList.remove('sprk-c-Autocomplete__results--is-hidden');
     input.parentNode.setAttribute('aria-expanded', 'true')
   }
 
@@ -167,11 +167,11 @@ const setupAutocomplete = (container) => {
       errorContainer.querySelector('.sprk-b-ErrorText');
     if (input.getAttribute('data-myapp-autocomplete-value') === 'cucumber') {
       input.classList.add('sprk-b-TextInput--error');
-      errorContainer.classList.remove('sprk-u-Display--none');
+      errorContainer.classList.remove('sprk-c-Autocomplete__results--is-hidden');
       errorTextContainer.innerText = "This is not a fruit.";
     } else {
       input.classList.remove('sprk-b-TextInput--error');
-      errorContainer.classList.add('sprk-u-Display--none');
+      errorContainer.classList.add('sprk-c-Autocomplete__results--is-hidden');
       errorTextContainer.innerText = "";
     }
   }
@@ -221,7 +221,7 @@ const setupAutocomplete = (container) => {
     const filterText = input.value.trim();
     const spinner = list.querySelector('[data-myapp-autocomplete-loading]')
     showList(list, input);
-    spinner.classList.remove('sprk-u-Display--none');
+    spinner.classList.remove('sprk-c-Autocomplete__results--is-hidden');
 
     let interval;
 
@@ -242,7 +242,7 @@ const setupAutocomplete = (container) => {
       });
 
       liveAnnouncer.innerText = "5 results found.";
-      spinner.classList.add('sprk-u-Display--none');
+      spinner.classList.add('sprk-c-Autocomplete__results--is-hidden');
       clearInterval(interval);
     }, 3000)
   }
