@@ -25,12 +25,12 @@
       "pre-commit": "lint-staged"
     }
   },
-  "author": "Spark Dev Team <sparkdesignsystem@quickenloans.com>",
+  "author": "Spark Dev Team <sparkdesignsystem@rocketmorgage.com>",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
-    "@sparkdesignsystem/spark": "^18.0.0",
+    "@sparkdesignsystem/spark": "^18.0.2",
     "babel-loader": "^8.2.2",
     "css-loader": "^3.6.0",
     "eslint": "^7.13.0",
