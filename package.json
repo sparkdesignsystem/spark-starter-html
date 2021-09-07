@@ -25,7 +25,7 @@
       "pre-commit": "lint-staged"
     }
   },
-  "author": "Spark Dev Team <sparkdesignsystem@quickenloans.com>",
+  "author": "Spark Dev Team <sparkdesignsystem@rocketmortgage.com>",
   "license": "MIT",
   "devDependencies": {
     "@sparkdesignsystem/spark": "^18.0.2",
